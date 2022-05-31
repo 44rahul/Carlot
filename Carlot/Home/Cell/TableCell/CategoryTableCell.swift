@@ -10,6 +10,7 @@ import UIKit
 class CategoryTableCell: UITableViewCell,UITableViewDataSource,UITableViewDelegate{
     
     var IntCount = 8
+    var HomeNavigation : UINavigationController?
 
     @IBOutlet weak var tableHeight: NSLayoutConstraint!
     @IBOutlet weak var ProductTable: UITableView!
@@ -38,11 +39,11 @@ class CategoryTableCell: UITableViewCell,UITableViewDataSource,UITableViewDelega
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! ProductTableCell
         
-            
-            return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! ProductTableCell
+        cell.selectionStyle = .none
+        
+        return cell
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -52,6 +53,9 @@ class CategoryTableCell: UITableViewCell,UITableViewDataSource,UITableViewDelega
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let vc = DetailVC.instance(.main) as! DetailVC
+        HomeNavigation?.pushViewController(vc, animated: true)
 
     }
 

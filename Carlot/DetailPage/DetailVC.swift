@@ -9,6 +9,8 @@ import UIKit
 
 class DetailVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
+    @IBOutlet weak var profilePic: UIImageView!
+    @IBOutlet weak var makeAnOfferView: UIView!
     @IBOutlet weak var DetailTable: UITableView!
     @IBOutlet weak var DetailView: UIView!
     @IBOutlet weak var purchaseBtn: UIButton!
@@ -17,16 +19,54 @@ class DetailVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        purchaseBtn.layer.cornerRadius = 10
+      //  purchaseBtn.layer.cornerRadius = 10
         ChatBtn.layer.cornerRadius = 10
         followBtn.layer.cornerRadius = 10
         DetailView.layer.cornerRadius = 10
+        makeAnOfferView.isHidden = true
         
-        
-        
+        profilePic.layer.cornerRadius = profilePic.frame.size.height/2
         
     }
     
+    @IBAction func backBtnClicked(_ sender: Any) {
+        
+        makeAnOfferView.isHidden = true
+
+    }
+    
+    @IBAction func shareBtnClicked(_ sender: Any) {
+        
+        let text = "This is the text....."
+        let textShare = [ text ]
+        let activityViewController = UIActivityViewController(activityItems: textShare , applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view
+        self.present(activityViewController, animated: true, completion: nil)
+        
+    }
+        
+        
+    @IBAction func sendBtnClicked(_ sender: Any) {
+        
+        makeAnOfferView.isHidden = true
+
+    }
+    
+    
+    
+    @IBAction func ratingBtnClicked(_ sender: Any) {
+        
+        let vc = ReviewsVC.instance(.main) as! ReviewsVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    @IBAction func makeOfferBtnClicked(_ sender: Any) {
+        
+        makeAnOfferView.isHidden = false
+
+    }
+    
+    @IBAction func BuyNowBuutonclicked(_ sender: Any) {
+    }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         

@@ -9,7 +9,11 @@ import UIKit
 
 class BrandTableCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
 
+    
+    var CatNavigation : UINavigationController?
+
     @IBOutlet weak var BrandCollection: UICollectionView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -32,13 +36,12 @@ class BrandTableCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewD
         
     }
     
-    
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
        
         return 3
         
     }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! BrandCollectioncell
@@ -66,6 +69,22 @@ class BrandTableCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewD
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        if indexPath.row == 0 {
+
+            let vc = ProductCategoryVC.instance(.main) as! ProductCategoryVC
+            CatNavigation?.pushViewController(vc, animated: true)
+//            let storyBoard = UIStoryboard(name: "Home", bundle: nil)
+//                    if let detailVC = storyBoard.instantiateViewController(withIdentifier: "DetailVC") as?  {
+//                        self.navigationController?.pushViewController(detailVC, animated: true)
+//                    }
+//            let vc = EditProfileVC.instance(.main) as! EditProfileVC
+//            CatNavigation.pushViewController(vc, animated: true)
+        }else {
+//
+            let vc = ListingVC.instance(.main) as! ListingVC
+            CatNavigation?.pushViewController(vc, animated: true)
+        }
     
     }
     

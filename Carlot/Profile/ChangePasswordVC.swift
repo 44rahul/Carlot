@@ -52,7 +52,17 @@ class ChangePasswordVC: UIViewController {
             attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray]
         )
     }
+    @IBAction func backBtnClciked(_ sender: Any) {
+        
+        self.navigationController?.popViewController(animated: true)
+        
+    }
     
+    @IBAction func DoneBtnClicked(_ sender: Any) {
+        
+        let vc = BaseTabVC.instance(.homeTab) as! BaseTabVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     @IBAction func btnCurrentPwdClicked(_ sender: UIButton) {
         
         if IsConditionChecked{

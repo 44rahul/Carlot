@@ -35,6 +35,12 @@ class EditProfileVC: UIViewController {
 //        let vc = SideMenuVC.instance(.main) as! SideMenuVC
 //        self.navigationController?.pushViewController(vc, animated: true)
     }
+    @IBAction func SaveBtnClicked(_ sender: Any) {
+        
+                let vc = BaseTabVC.instance(.homeTab) as! BaseTabVC
+                self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
 }
 
 extension EditProfileVC : UITableViewDelegate, UITableViewDataSource{

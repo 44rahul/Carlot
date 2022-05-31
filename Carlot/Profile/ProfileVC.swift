@@ -50,14 +50,14 @@ extension ProfileVC : UITableViewDelegate, UITableViewDataSource
        let cell = tableView.dequeueReusableCell(withIdentifier: "ProfileCell", for: indexPath) as! ProfileCell
         
         cell.lblName.text = ArrProfileInfo[indexPath.row]
-        //cell.lblAddres.text = ArrProfileData[indexPath.row]
-        cell.txt_address.text = ArrProfileData[indexPath.row]
-        cell.txt_address.isUserInteractionEnabled = false
+        cell.lblAddres.text = ArrProfileData[indexPath.row]
+//        cell.txt_address.text = ArrProfileData[indexPath.row]
+//        cell.txt_address.isUserInteractionEnabled = false
         
-        if indexPath.row == 3{
-            cell.txt_address.isSecureTextEntry = true
-        }
-        
+//        if indexPath.row == 3{
+//            cell.txt_address.isSecureTextEntry = true
+//        }
+//        
         return cell
     }
     

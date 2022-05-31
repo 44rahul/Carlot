@@ -1,22 +1,26 @@
 //
-//  TransactionVC.swift
+//  MyCarVC.swift
 //  Carlot
 //
-//  Created by emizentech on 5/25/22.
+//  Created by emizentech on 5/27/22.
 //
 
 import UIKit
 
-class TransactionVC: UIViewController , UITableViewDelegate , UITableViewDataSource {
+class MyCarVC: UIViewController , UITableViewDelegate , UITableViewDataSource {
+    @IBOutlet weak var listingView: UIView!
+    @IBOutlet weak var listingTable: UITableView!
 
-    @IBOutlet weak var transaction_Table : UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        listingView.layer.cornerRadius = 20
+        listingView.layer.borderWidth = 0.3
+        listingView.layer.borderColor = UIColor.white.cgColor
+        
+
     }
-    
-    @IBAction func ibactionBtnClicked(_ sender: Any) {
+    @IBAction func backBtnClicked(_ sender: Any) {
         
         self.navigationController?.popViewController(animated: true)
     }
@@ -30,8 +34,8 @@ class TransactionVC: UIViewController , UITableViewDelegate , UITableViewDataSou
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TransactionCell") as! TransactionCell
-     //   cell.searchSugglbl.text = SearchSuggestionArr[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MyCarsTableCell") as! MyCarsTableCell
+     
         
         return cell
         
@@ -40,8 +44,7 @@ class TransactionVC: UIViewController , UITableViewDelegate , UITableViewDataSou
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return 100
-        
+        return 138
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

@@ -9,6 +9,7 @@ import UIKit
 
 class HomeVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
+    
     @IBOutlet weak var homeTable: UITableView!
     
     override func viewDidLoad() {
@@ -22,6 +23,11 @@ class HomeVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         
        // homeTable.contentInset = UIEdgeInsets(top: -self.view.safeAreaInsets.top, left: 0, bottom: 0, right:  0)
     }
+    @IBAction func SideMenuBtnClicked(_ sender: Any) {
+        
+        let vc = SideMenuVC.instance(.main) as! SideMenuVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -30,6 +36,12 @@ class HomeVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         
     }
     
+    @IBAction func seeAllBtnClicked(_ sender: Any) {
+        
+        let vc = ListingVC.instance(.main) as! ListingVC
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if indexPath.row == 0 {
@@ -43,7 +55,7 @@ class HomeVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         }else if indexPath.row == 1 {
             
             let cell1 = tableView.dequeueReusableCell(withIdentifier: "Cell2") as! BrandTableCell
-           
+            cell1.CatNavigation = self.navigationController
             return cell1
             
         }else
@@ -54,6 +66,8 @@ class HomeVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
             cell2.layer.borderWidth = 0.5
             cell2.layer.borderColor = UIColor.gray.cgColor
             cell2.layer.cornerRadius = 20
+            
+            cell2.HomeNavigation = self.navigationController
             return cell2
             
         }
@@ -68,6 +82,7 @@ class HomeVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+       
        
         
     }

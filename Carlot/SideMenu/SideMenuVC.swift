@@ -114,6 +114,47 @@ extension SideMenuVC : UITableViewDelegate , UITableViewDataSource{
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
+        if indexPath.row == 2 {
+            
+            let vc = FollowingVC.instance(.main) as! FollowingVC
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        }else if indexPath.row == 5 {
+            
+            let vc = ReviewsVC.instance(.main) as! ReviewsVC
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        }else if indexPath.row == 4 {
+            
+            let vc = TransactionVC.instance(.homeTab) as! TransactionVC
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        }else if indexPath.row == 0 {
+            
+            let vc = MyCarVC.instance(.main) as! MyCarVC
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        }else if indexPath.row == 1 {
+            
+            let vc = NotificationVC.instance(.main) as! NotificationVC
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        }else if indexPath.row == 3 {
+            
+            let vc = MemberShipPlanVC.instance(.main) as! MemberShipPlanVC
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        }else if indexPath.row == 6 {
+            
+            let vc = ContactUsVC.instance(.main) as! ContactUsVC
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        }
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
        

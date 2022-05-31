@@ -86,7 +86,7 @@ class LoginVC: UIViewController {
            return
         }else{
             
-            let vc = SignUpVC.instance(.Authentication) as! SignUpVC
+            let vc = BaseTabVC.instance(.homeTab) as! BaseTabVC
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

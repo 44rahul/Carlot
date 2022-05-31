@@ -22,6 +22,9 @@ class ListingVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         listingView.layer.borderColor = UIColor.white.cgColor
     }
     
+    @IBAction func backBtnClicked(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return 8
@@ -49,7 +52,8 @@ class ListingVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        
+        let vc = DetailVC.instance(.main) as! DetailVC
+        self.navigationController?.pushViewController(vc, animated: true)
         
     }
     
