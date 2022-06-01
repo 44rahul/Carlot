@@ -47,6 +47,10 @@ class Rate_ReviewVC: UIViewController , UITextViewDelegate{
 //        }
 //    }
     
+    @IBAction func backBtnClicked(_ sender: Any) {
+        
+        self.navigationController?.popViewController(animated: true)
+    }
     func textViewDidEndEditing(_ textView: UITextView) {
         if textView.text.isEmpty {
             textView.text = " Type here..."

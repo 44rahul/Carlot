@@ -17,6 +17,9 @@ class SideMenuVC: UIViewController {
         case following
         case myorders
         case myfavourite
+        case Chat
+        case Contact
+
         case review
         case contact
         case others
@@ -56,6 +59,7 @@ class SideMenuVC: UIViewController {
                                        MenuDetail(text: "Following", img: "followingSide", type: .following),
                                        MenuDetail(text: "Membership plan", img: "membershipSide", type: .myorders),
                                        MenuDetail(text: "Transaction", img: "transactionSide", type: .myfavourite),
+                                       MenuDetail(text: "Chat", img: "chat", type: .Chat),
                                        MenuDetail(text: "Reviews & ratings", img: "reviewSide", type: .review),
                                        MenuDetail(text: "Contact us", img: "contactSide", type: .contact),
                                        MenuDetail(text: "others", img: "otherSide", type: .others),
@@ -87,19 +91,23 @@ extension SideMenuVC : UITableViewDelegate , UITableViewDataSource{
             cell.sidemenuImages.image = UIImage(named: "\(menuList[indexPath.section].list[indexPath.row].img!)")
             cell.lblmenuItem.text = menuList[indexPath.section].list[indexPath.row].text
             cell.switchbtn.isHidden = false
+            cell.selectionStyle = .none
+
             return cell
 
         }
-        else if  indexPath.row == 7 {
+        else if  indexPath.row == 8 {
             
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "OthersSideCell", for: indexPath) as! OthersSideCell
 
          //   cell.switchbtn.isHidden = true
+
             cell.CollaspeBtn.tag = indexPath.row
             cell.CollaspeBtn.addTarget(self, action: #selector(connected(sender:)), for: .touchUpInside)
             cell.backgroundColor = UIColor.clear
-           
+            cell.selectionStyle = .none
+
             return cell
 
         }
@@ -109,7 +117,8 @@ extension SideMenuVC : UITableViewDelegate , UITableViewDataSource{
             cell.sidemenuImages.image = UIImage(named: "\(menuList[indexPath.section].list[indexPath.row].img!)")
             cell.lblmenuItem.text = menuList[indexPath.section].list[indexPath.row].text
             cell.switchbtn.isHidden = true
-            
+            cell.selectionStyle = .none
+
            return cell
         }
     }
@@ -123,6 +132,12 @@ extension SideMenuVC : UITableViewDelegate , UITableViewDataSource{
             self.navigationController?.pushViewController(vc, animated: true)
             
         }else if indexPath.row == 5 {
+            
+            let vc = ChatListVC.instance(.main) as! ChatListVC
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        }
+        else if indexPath.row == 6 {
             
             let vc = ReviewsVC.instance(.main) as! ReviewsVC
             self.navigationController?.pushViewController(vc, animated: true)
@@ -147,7 +162,7 @@ extension SideMenuVC : UITableViewDelegate , UITableViewDataSource{
             let vc = MemberShipPlanVC.instance(.main) as! MemberShipPlanVC
             self.navigationController?.pushViewController(vc, animated: true)
             
-        }else if indexPath.row == 6 {
+        }else if indexPath.row == 7 {
             
             let vc = ContactUsVC.instance(.main) as! ContactUsVC
             self.navigationController?.pushViewController(vc, animated: true)
@@ -158,9 +173,9 @@ extension SideMenuVC : UITableViewDelegate , UITableViewDataSource{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
        
-        if  indexPath.row == 7 {
+        if  indexPath.row == 8 {
           
-            if checkimgstr == "upArrow" {
+            if checkimgstr == "Down_Arow" {
                 
             return   229
 
@@ -197,12 +212,13 @@ extension SideMenuVC : UITableViewDelegate , UITableViewDataSource{
             cell.CollaspeBtn.setImage(UIImage (named: "Down_Arow"), for: UIControl.State.normal)
             checkimgstr = "Down_Arow"
 
-            height = 71
+            height = 229
+            
         }else {
             
             cell.CollaspeBtn.setImage(UIImage (named: "upArrow"), for: UIControl.State.normal)
                         checkimgstr = "upArrow"
-                        height = 229
+                        height = 71
         }
         
         sideMenu_tbl.reloadData()

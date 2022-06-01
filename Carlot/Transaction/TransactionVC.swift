@@ -31,9 +31,22 @@ class TransactionVC: UIViewController , UITableViewDelegate , UITableViewDataSou
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "TransactionCell") as! TransactionCell
-     //   cell.searchSugglbl.text = SearchSuggestionArr[indexPath.row]
+        //   cell.searchSugglbl.text = SearchSuggestionArr[indexPath.row]
+        
+        cell.ratnow.addTarget(self, action: #selector(connected(sender:)), for: .touchUpInside)
+        cell.ratnow.tag = indexPath.row
+
+        cell.selectionStyle = .none
         
         return cell
+        
+        
+    }
+    
+    @objc func connected(sender: UIButton){
+      //  let buttonTag = sender.tag
+        let vc = Rate_ReviewVC.instance(.main) as! Rate_ReviewVC
+        self.navigationController?.pushViewController(vc, animated: true)
         
         
     }

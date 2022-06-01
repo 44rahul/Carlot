@@ -29,8 +29,18 @@ class AddPostVC: UIViewController{
         
     }
     
+    @IBAction func AddAddressBtnClicked(_ sender: Any) {
+        
+        let vc = addAddressVC.instance(.main) as! addAddressVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
-   
+    @IBAction func submitBtnClicked(_ sender: Any) {
+        
+        let vc = MemberShipPlanVC.instance(.main) as! MemberShipPlanVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     
     func OpenGalleyOrCameraAction()
     {

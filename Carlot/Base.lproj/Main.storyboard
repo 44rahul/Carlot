@@ -338,8 +338,8 @@
                                     <outlet property="delegate" destination="Hv4-Wf-snK" id="wBd-zm-Jif"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3Z-0T-Hlu">
-                                <rect key="frame" x="174.5" y="57" width="65" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3Z-0T-Hlu">
+                                <rect key="frame" x="137" y="57" width="141" height="20"/>
                                 <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy-SemiBold" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -356,6 +356,7 @@
                             <constraint firstItem="fMi-Wa-9yz" firstAttribute="leading" secondItem="dgU-Wt-r7A" secondAttribute="leading" constant="7" id="Tf3-Wp-cBA"/>
                             <constraint firstItem="zZN-ls-Uqb" firstAttribute="top" secondItem="ta9-yI-QTI" secondAttribute="top" id="Tin-5w-cyX"/>
                             <constraint firstItem="d3Z-0T-Hlu" firstAttribute="centerY" secondItem="fMi-Wa-9yz" secondAttribute="centerY" id="V8v-jr-6Gb"/>
+                            <constraint firstItem="dgU-Wt-r7A" firstAttribute="trailing" secondItem="d3Z-0T-Hlu" secondAttribute="trailing" constant="136" id="XUX-K7-Ux4"/>
                             <constraint firstItem="zZN-ls-Uqb" firstAttribute="trailing" secondItem="dgU-Wt-r7A" secondAttribute="trailing" id="ZDa-Cy-sMY"/>
                             <constraint firstAttribute="bottom" secondItem="QbC-p2-w2h" secondAttribute="bottom" id="fBd-jg-9ea"/>
                             <constraint firstItem="U5N-lE-5iS" firstAttribute="top" secondItem="fMi-Wa-9yz" secondAttribute="bottom" constant="1" id="i5c-Q3-y4L"/>
@@ -373,7 +374,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xzt-an-n42" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-620" y="-499"/>
+            <point key="canvasLocation" x="-620.28985507246387" y="-499.55357142857139"/>
         </scene>
         <!--ListingVC-->
         <scene sceneID="2IK-dR-Bvw">
@@ -844,6 +845,9 @@
                                                                     <color key="value" red="1" green="0.83921568629999999" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="cahtBtnClicked:" destination="Gr4-J1-aK1" eventType="touchUpInside" id="Acc-Og-xaf"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.1607843041" green="0.15686275059999999" blue="0.15686275059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1453,6 +1457,17 @@
                                                 <constraint firstItem="Rik-xJ-Qt4" firstAttribute="leading" secondItem="0bI-zS-Qjx" secondAttribute="trailing" constant="2" id="xyq-gP-48D"/>
                                                 <constraint firstItem="5vf-Vx-2Ge" firstAttribute="leading" secondItem="Suw-rO-1I3" secondAttribute="leading" constant="17" id="zM5-D6-Py7"/>
                                             </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                         </view>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1597,6 +1612,11 @@
                             <constraint firstItem="7Kf-1d-8dX" firstAttribute="trailing" secondItem="ewF-yT-MMa" secondAttribute="trailing" id="jmp-yJ-Uqt"/>
                             <constraint firstItem="oVg-zG-37o" firstAttribute="top" secondItem="r2i-rS-UXM" secondAttribute="top" id="p2W-ZU-88F"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="7Kf-1d-8dX"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="ChatBtn" destination="XCW-H8-XTQ" id="Ap3-AK-txE"/>
@@ -1809,6 +1829,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="bckBtn"/>
+                                        <connections>
+                                            <action selector="backBtnClicked:" destination="6D0-AS-xB1" eventType="touchUpInside" id="Fh6-Vz-Nsc"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdY-He-qpo">
                                         <rect key="frame" x="170" y="13" width="74" height="20"/>
@@ -1843,6 +1866,9 @@
                                             <fontDescription key="titleFontDescription" name="Gilroy-SemiBold" family="Gilroy-SemiBold" pointSize="16"/>
                                             <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="AddressBtnClicked:" destination="6D0-AS-xB1" eventType="touchUpInside" id="hh6-uU-0Ts"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Delivery Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ea-D6-pPq">
                                         <rect key="frame" x="17" y="88" width="172" height="21"/>
@@ -2023,9 +2049,12 @@ apri NA, Orlandi India.</string>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="bckBtn"/>
+                                        <connections>
+                                            <action selector="backBtnClicked:" destination="i52-cZ-BBt" eventType="touchUpInside" id="c9O-8R-sYZ"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oqc-LD-79A">
-                                        <rect key="frame" x="137" y="13" width="140" height="20"/>
+                                        <rect key="frame" x="115" y="13" width="183" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="q9C-7Q-Cyz"/>
                                         </constraints>
@@ -2036,8 +2065,8 @@ apri NA, Orlandi India.</string>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="Oqc-LD-79A" firstAttribute="leading" secondItem="pLX-90-4RF" secondAttribute="trailing" constant="91" id="TVT-kq-fON"/>
-                                    <constraint firstAttribute="trailing" secondItem="Oqc-LD-79A" secondAttribute="trailing" constant="137" id="Z3J-P3-c96"/>
+                                    <constraint firstItem="Oqc-LD-79A" firstAttribute="leading" secondItem="pLX-90-4RF" secondAttribute="trailing" constant="69" id="TVT-kq-fON"/>
+                                    <constraint firstAttribute="trailing" secondItem="Oqc-LD-79A" secondAttribute="trailing" constant="116" id="Z3J-P3-c96"/>
                                     <constraint firstItem="Oqc-LD-79A" firstAttribute="top" secondItem="tUh-3q-9RK" secondAttribute="top" constant="13" id="bSh-yh-ECB"/>
                                     <constraint firstItem="pLX-90-4RF" firstAttribute="leading" secondItem="tUh-3q-9RK" secondAttribute="leading" constant="8" id="jVt-1D-WzW"/>
                                     <constraint firstItem="pLX-90-4RF" firstAttribute="top" secondItem="tUh-3q-9RK" secondAttribute="top" constant="7" id="tXn-VC-Vuw"/>
@@ -2055,11 +2084,11 @@ apri NA, Orlandi India.</string>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address Line 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3YW-tD-vFS">
-                                                    <rect key="frame" x="16" y="20" width="94" height="17"/>
+                                                    <rect key="frame" x="16" y="20" width="89.5" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="iKA-QP-HKc"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -2085,11 +2114,11 @@ apri NA, Orlandi India.</string>
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address Line 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOA-1S-EiB">
-                                                    <rect key="frame" x="16" y="121" width="94" height="17"/>
+                                                    <rect key="frame" x="16" y="121" width="92" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="vsy-Xe-FHJ"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -2115,11 +2144,11 @@ apri NA, Orlandi India.</string>
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Landmark" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9l-w0-2fb">
-                                                    <rect key="frame" x="16" y="222" width="63" height="17"/>
+                                                    <rect key="frame" x="16" y="222" width="65" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="HnR-ec-grz"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -2145,11 +2174,11 @@ apri NA, Orlandi India.</string>
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76a-Li-DGh">
-                                                    <rect key="frame" x="16" y="323" width="33" height="17"/>
+                                                    <rect key="frame" x="16" y="323" width="35" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="4Aw-SK-0qr"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -2175,11 +2204,11 @@ apri NA, Orlandi India.</string>
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttU-v3-VNu">
-                                                    <rect key="frame" x="16" y="424" width="25" height="17"/>
+                                                    <rect key="frame" x="16" y="424" width="26" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="ygx-Zo-vKB"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -2205,11 +2234,11 @@ apri NA, Orlandi India.</string>
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zip Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EhH-Vg-gCW">
-                                                    <rect key="frame" x="16" y="525" width="58" height="17"/>
+                                                    <rect key="frame" x="16" y="525" width="59.5" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="Lt8-ea-Y8p"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -2235,11 +2264,11 @@ apri NA, Orlandi India.</string>
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGe-kH-xJz">
-                                                    <rect key="frame" x="16" y="626" width="96.5" height="17"/>
+                                                    <rect key="frame" x="16" y="626" width="98" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="eZn-tw-Cnq"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -2335,11 +2364,11 @@ apri NA, Orlandi India.</string>
                                                     </userDefinedRuntimeAttributes>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Delivery Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ne-cI-Cwo">
-                                                    <rect key="frame" x="16" y="728" width="127.5" height="17"/>
+                                                    <rect key="frame" x="16" y="728" width="130" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="hlb-Eg-L2c"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -2463,7 +2492,7 @@ apri NA, Orlandi India.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UKq-kB-J8W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="191"/>
+            <point key="canvasLocation" x="115.94202898550725" y="190.84821428571428"/>
         </scene>
         <!--Custom Pop UpVC-->
         <scene sceneID="JUa-fB-IUh">
@@ -2816,7 +2845,7 @@ printingand typesetting industry.</string>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="TMH-hp-asU">
-                                    <rect key="frame" x="0.0" y="138" width="414" height="128"/>
+                                    <rect key="frame" x="0.0" y="155" width="414" height="128"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nz5-2K-I9T">
@@ -2855,26 +2884,26 @@ printingand typesetting industry.</string>
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="EditProfileCell" rowHeight="71" id="4dU-bz-Zp8" customClass="EditProfileCell" customModule="Carlot" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="71"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="EditProfileCell" rowHeight="88" id="4dU-bz-Zp8" customClass="EditProfileCell" customModule="Carlot" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="88"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4dU-bz-Zp8" id="KKB-ps-kvx">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="71"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNt-yi-Gbf">
-                                                    <rect key="frame" x="15" y="18" width="43" height="17"/>
+                                                    <rect key="frame" x="15" y="18" width="39" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="wPa-y2-JfH"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
                                                     <color key="textColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qxC-PK-pCN">
-                                                    <rect key="frame" x="15" y="45" width="384" height="20"/>
-                                                    <color key="textColor" red="0.50980392156862742" green="0.50980392156862742" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <rect key="frame" x="15" y="45" width="384" height="26"/>
+                                                    <color key="textColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="07h-zt-pGn">
@@ -2898,7 +2927,7 @@ printingand typesetting industry.</string>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="07h-zt-pGn" secondAttribute="trailing" constant="17" id="32I-hH-8Qh"/>
                                                 <constraint firstItem="dNt-yi-Gbf" firstAttribute="leading" secondItem="KKB-ps-kvx" secondAttribute="leading" constant="15" id="ADe-3b-AyY"/>
-                                                <constraint firstAttribute="bottom" secondItem="qxC-PK-pCN" secondAttribute="bottom" constant="6" id="DRO-3u-red"/>
+                                                <constraint firstAttribute="bottom" secondItem="qxC-PK-pCN" secondAttribute="bottom" constant="17" id="DRO-3u-red"/>
                                                 <constraint firstAttribute="trailing" secondItem="qxC-PK-pCN" secondAttribute="trailing" constant="15" id="Kb6-Yf-jJt"/>
                                                 <constraint firstItem="qxC-PK-pCN" firstAttribute="top" secondItem="dNt-yi-Gbf" secondAttribute="bottom" constant="10" id="dgg-gZ-KW7"/>
                                                 <constraint firstItem="dNt-yi-Gbf" firstAttribute="top" secondItem="KKB-ps-kvx" secondAttribute="top" constant="18" id="ds8-pk-72N"/>
@@ -2958,7 +2987,7 @@ printingand typesetting industry.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JjW-hY-6cz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="893" y="-1228"/>
+            <point key="canvasLocation" x="892.75362318840587" y="-1228.125"/>
         </scene>
         <!--Change PasswordVC-->
         <scene sceneID="hgA-ll-Zpt">
@@ -3131,7 +3160,7 @@ printingand typesetting industry.</string>
                                                         <constraint firstAttribute="height" constant="22" id="IzH-iI-5z4"/>
                                                     </constraints>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                    <state key="normal" image="secure_txt"/>
+                                                    <state key="normal" image="hidePass"/>
                                                     <connections>
                                                         <action selector="btnCurrentPwdClicked:" destination="RqW-0p-2QF" eventType="touchUpInside" id="2p4-Tj-vzV"/>
                                                     </connections>
@@ -3142,7 +3171,7 @@ printingand typesetting industry.</string>
                                                         <constraint firstAttribute="height" constant="22" id="Dce-It-kJK"/>
                                                     </constraints>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                    <state key="normal" image="secure_txt"/>
+                                                    <state key="normal" image="hidePass"/>
                                                     <connections>
                                                         <action selector="btnNewPwdClicked:" destination="RqW-0p-2QF" eventType="touchUpInside" id="YsN-mf-6pp"/>
                                                     </connections>
@@ -3153,7 +3182,7 @@ printingand typesetting industry.</string>
                                                         <constraint firstAttribute="height" constant="22" id="iY1-oV-YPN"/>
                                                     </constraints>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                    <state key="normal" image="secure_txt"/>
+                                                    <state key="normal" image="hidePass"/>
                                                     <connections>
                                                         <action selector="btnConfirmPwdClicked:" destination="RqW-0p-2QF" eventType="touchUpInside" id="i1b-aT-cQl"/>
                                                     </connections>
@@ -3226,6 +3255,9 @@ printingand typesetting industry.</string>
                     </view>
                     <connections>
                         <outlet property="Bg_view" destination="zLo-SH-0cn" id="vVO-hm-uJM"/>
+                        <outlet property="NewPassBtn" destination="zqd-Sk-Fq8" id="HHu-Ji-oba"/>
+                        <outlet property="confirmPassBtn" destination="wTJ-rf-pe4" id="KfF-gC-E6u"/>
+                        <outlet property="currentPassBtn" destination="J1R-36-HIa" id="PtE-QQ-0q7"/>
                         <outlet property="txtConfirmPassword" destination="aIX-sO-MiW" id="8MJ-ST-4HD"/>
                         <outlet property="txtCurrentPassword" destination="tJK-Qe-paq" id="W1A-DP-FCV"/>
                         <outlet property="txtNewPassword" destination="eg4-fb-7za" id="Kk2-3b-RwU"/>
@@ -3905,7 +3937,7 @@ printingand typesetting industry.</string>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Robert Fox" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3aT-bE-o23">
-                                        <rect key="frame" x="110" y="124" width="90" height="21"/>
+                                        <rect key="frame" x="110" y="112" width="90" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="5PL-6V-aGw"/>
                                         </constraints>
@@ -3914,9 +3946,18 @@ printingand typesetting industry.</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="robertfox@gmail.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRC-ty-q93">
-                                        <rect key="frame" x="110" y="147" width="135.5" height="21"/>
+                                        <rect key="frame" x="110" y="135" width="135.5" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="xXZ-ld-r4w"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Followers: 385" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82K-mB-Kuf">
+                                        <rect key="frame" x="110" y="159" width="88" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="Sd2-kr-lYM"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -3928,13 +3969,15 @@ printingand typesetting industry.</string>
                                     <constraint firstItem="niS-2e-iRm" firstAttribute="top" secondItem="NDs-Eb-esI" secondAttribute="top" constant="152" id="0dN-o8-RIk"/>
                                     <constraint firstItem="niS-2e-iRm" firstAttribute="leading" secondItem="NDs-Eb-esI" secondAttribute="leading" constant="78" id="AYt-Ha-BO8"/>
                                     <constraint firstItem="3aT-bE-o23" firstAttribute="leading" secondItem="JTA-24-ZCC" secondAttribute="trailing" constant="14" id="Apu-ZZ-UsO"/>
+                                    <constraint firstItem="82K-mB-Kuf" firstAttribute="top" secondItem="jRC-ty-q93" secondAttribute="bottom" constant="3" id="BoZ-aO-1Xk"/>
                                     <constraint firstItem="JTA-24-ZCC" firstAttribute="top" secondItem="NDs-Eb-esI" secondAttribute="top" constant="103" id="CsZ-ak-BeD"/>
                                     <constraint firstItem="jRC-ty-q93" firstAttribute="top" secondItem="3aT-bE-o23" secondAttribute="bottom" constant="2" id="JcW-uy-D5p"/>
                                     <constraint firstAttribute="height" constant="213" id="PeT-k4-yMd"/>
                                     <constraint firstItem="JTA-24-ZCC" firstAttribute="leading" secondItem="NDs-Eb-esI" secondAttribute="leading" constant="16" id="Xai-qD-qhB"/>
                                     <constraint firstItem="jRC-ty-q93" firstAttribute="leading" secondItem="niS-2e-iRm" secondAttribute="trailing" constant="8" symbolic="YES" id="bPF-sv-r50"/>
-                                    <constraint firstItem="3aT-bE-o23" firstAttribute="top" secondItem="NDs-Eb-esI" secondAttribute="top" constant="124" id="wYG-xZ-fBQ"/>
+                                    <constraint firstItem="3aT-bE-o23" firstAttribute="top" secondItem="NDs-Eb-esI" secondAttribute="top" constant="112" id="wYG-xZ-fBQ"/>
                                     <constraint firstAttribute="width" constant="414" id="xGC-U3-cVo"/>
+                                    <constraint firstItem="82K-mB-Kuf" firstAttribute="leading" secondItem="niS-2e-iRm" secondAttribute="trailing" constant="8" symbolic="YES" id="xyw-BD-bT8"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkm-uD-Kra">
@@ -4065,60 +4108,50 @@ printingand typesetting industry.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2t-Qj-QuG">
-                                <rect key="frame" x="22" y="57" width="24" height="24"/>
+                                <rect key="frame" x="22" y="54" width="24" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="6PJ-uJ-wPJ"/>
                                     <constraint firstAttribute="width" constant="24" id="PtO-KA-312"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="Back"/>
+                                <connections>
+                                    <action selector="backBtnClicked:" destination="MTF-mr-Lms" eventType="touchUpInside" id="cq4-4s-daK"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate &amp; Review" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3I-Yt-Knx">
-                                <rect key="frame" x="80" y="57" width="246" height="22"/>
+                                <rect key="frame" x="84" y="55" width="246" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="eMS-AM-7kd"/>
                                     <constraint firstAttribute="width" constant="246" id="lOY-jp-hy2"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k0k-W5-egP">
-                                <rect key="frame" x="0.0" y="95" width="414" height="801"/>
+                                <rect key="frame" x="0.0" y="93" width="414" height="803"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYY-aT-PNo">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate Your Experience" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYY-aT-PNo">
                                         <rect key="frame" x="15" y="20" width="384" height="27"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="27" id="xLd-Ed-XzO"/>
                                         </constraints>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Rate Your Experience">
-                                                <attributes>
-                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" metaFont="system" size="22"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
+                                        <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy-SemiBold" pointSize="22"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZ7-cc-tDu">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you satisfied with the car" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZ7-cc-tDu">
                                         <rect key="frame" x="16" y="49" width="382" height="17"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="17" id="ExJ-Dr-Y8T"/>
                                         </constraints>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Are you satisfied with the car">
-                                                <attributes>
-                                                    <color key="NSColor" red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" metaFont="system" size="14"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
+                                        <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
+                                        <color key="textColor" red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ope-NM-ESl">
-                                        <rect key="frame" x="16" y="170" width="382" height="140"/>
+                                        <rect key="frame" x="16" y="150" width="382" height="140"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8OP-5Z-paZ">
                                                 <rect key="frame" x="8" y="6" width="366" height="128"/>
@@ -4157,22 +4190,16 @@ printingand typesetting industry.</string>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z0b-Xa-htv">
-                                        <rect key="frame" x="30" y="350" width="354" height="56"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0b-Xa-htv">
+                                        <rect key="frame" x="30" y="330" width="354" height="56"/>
                                         <color key="backgroundColor" red="0.95686274510000002" green="0.73725490199999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" id="CVD-dd-4ka"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy-SemiBold" pointSize="20"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="submit">
-                                                    <attributes>
-                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" metaFont="system" size="18"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                        <state key="normal" title="submit">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -4181,14 +4208,14 @@ printingand typesetting industry.</string>
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UhB-nR-62j" customClass="CosmosView" customModule="Cosmos">
-                                        <rect key="frame" x="16" y="90" width="382" height="50"/>
+                                        <rect key="frame" x="16" y="90" width="308" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="PLO-Lo-QcF"/>
+                                            <constraint firstAttribute="height" constant="30" id="PLO-Lo-QcF"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="rating">
-                                                <real key="value" value="4"/>
+                                                <real key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
                                                 <integer key="value" value="5"/>
@@ -4208,7 +4235,7 @@ printingand typesetting industry.</string>
                                     <constraint firstItem="UhB-nR-62j" firstAttribute="top" secondItem="QZ7-cc-tDu" secondAttribute="bottom" constant="24" id="2XK-Gk-AT2"/>
                                     <constraint firstItem="UhB-nR-62j" firstAttribute="leading" secondItem="k0k-W5-egP" secondAttribute="leading" constant="16" id="2eY-f8-cwh"/>
                                     <constraint firstItem="QZ7-cc-tDu" firstAttribute="top" secondItem="UYY-aT-PNo" secondAttribute="bottom" constant="2" id="7nE-SB-mhh"/>
-                                    <constraint firstAttribute="trailing" secondItem="UhB-nR-62j" secondAttribute="trailing" constant="16" id="94a-aa-Rf1"/>
+                                    <constraint firstAttribute="trailing" secondItem="UhB-nR-62j" secondAttribute="trailing" constant="90" id="94a-aa-Rf1"/>
                                     <constraint firstAttribute="trailing" secondItem="UYY-aT-PNo" secondAttribute="trailing" constant="15" id="FAe-96-zlv"/>
                                     <constraint firstAttribute="trailing" secondItem="ope-NM-ESl" secondAttribute="trailing" constant="16" id="Oxd-Kv-Gg6"/>
                                     <constraint firstItem="Z0b-Xa-htv" firstAttribute="top" secondItem="ope-NM-ESl" secondAttribute="bottom" constant="40" id="Vw0-qC-D45"/>
@@ -4237,14 +4264,14 @@ printingand typesetting industry.</string>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="k0k-W5-egP" firstAttribute="leading" secondItem="aE2-p3-X3f" secondAttribute="leading" id="3jB-ih-Yef"/>
-                            <constraint firstItem="k0k-W5-egP" firstAttribute="top" secondItem="K2t-Qj-QuG" secondAttribute="bottom" constant="14" id="3pF-oz-WrP"/>
+                            <constraint firstItem="k0k-W5-egP" firstAttribute="top" secondItem="K2t-Qj-QuG" secondAttribute="bottom" constant="15" id="3pF-oz-WrP"/>
                             <constraint firstAttribute="bottom" secondItem="k0k-W5-egP" secondAttribute="bottom" id="5KN-IL-GVb"/>
                             <constraint firstItem="k0k-W5-egP" firstAttribute="trailing" secondItem="aE2-p3-X3f" secondAttribute="trailing" id="6bO-e5-5la"/>
-                            <constraint firstItem="K2t-Qj-QuG" firstAttribute="top" secondItem="aE2-p3-X3f" secondAttribute="top" constant="13" id="7od-5g-Jxp"/>
+                            <constraint firstItem="K2t-Qj-QuG" firstAttribute="top" secondItem="aE2-p3-X3f" secondAttribute="top" constant="10" id="7od-5g-Jxp"/>
                             <constraint firstItem="GAe-gC-iQ0" firstAttribute="trailing" secondItem="aE2-p3-X3f" secondAttribute="trailing" id="BIc-ki-skk"/>
-                            <constraint firstItem="e3I-Yt-Knx" firstAttribute="top" secondItem="aE2-p3-X3f" secondAttribute="top" constant="13" id="EkS-3G-SbX"/>
-                            <constraint firstItem="aE2-p3-X3f" firstAttribute="trailing" secondItem="e3I-Yt-Knx" secondAttribute="trailing" constant="88" id="MxL-Ed-yKw"/>
-                            <constraint firstItem="k0k-W5-egP" firstAttribute="top" secondItem="K2t-Qj-QuG" secondAttribute="bottom" constant="14" id="Tnt-b4-urj"/>
+                            <constraint firstItem="e3I-Yt-Knx" firstAttribute="top" secondItem="aE2-p3-X3f" secondAttribute="top" constant="11" id="EkS-3G-SbX"/>
+                            <constraint firstItem="aE2-p3-X3f" firstAttribute="trailing" secondItem="e3I-Yt-Knx" secondAttribute="trailing" constant="84" id="MxL-Ed-yKw"/>
+                            <constraint firstItem="k0k-W5-egP" firstAttribute="top" secondItem="K2t-Qj-QuG" secondAttribute="bottom" constant="15" id="Tnt-b4-urj"/>
                             <constraint firstAttribute="bottom" secondItem="GAe-gC-iQ0" secondAttribute="bottom" id="VXL-eg-s4v"/>
                             <constraint firstItem="K2t-Qj-QuG" firstAttribute="leading" secondItem="aE2-p3-X3f" secondAttribute="leading" constant="22" id="fMI-UU-hrq"/>
                             <constraint firstItem="GAe-gC-iQ0" firstAttribute="leading" secondItem="aE2-p3-X3f" secondAttribute="leading" id="ocM-w6-J8u"/>
@@ -4258,7 +4285,7 @@ printingand typesetting industry.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VJE-Ki-HoQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1539" y="-1933"/>
+            <point key="canvasLocation" x="1537.68115942029" y="-1933.2589285714284"/>
         </scene>
         <!--ProfileVC-->
         <scene sceneID="2sh-hy-C8W">
@@ -4276,7 +4303,7 @@ printingand typesetting industry.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="213"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5LW-0Y-sP8">
-                                        <rect key="frame" x="305" y="134" width="93" height="31"/>
+                                        <rect key="frame" x="305" y="127" width="93" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="93" id="DwR-NP-423"/>
                                             <constraint firstAttribute="height" constant="31" id="it0-Ao-L9a"/>
@@ -4328,7 +4355,7 @@ printingand typesetting industry.</string>
                                         <state key="normal" image="Camera"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Robert Fox" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ko-eG-GR8">
-                                        <rect key="frame" x="110" y="124" width="90" height="21"/>
+                                        <rect key="frame" x="110" y="109" width="90" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="2cb-yq-N8t"/>
                                         </constraints>
@@ -4336,10 +4363,19 @@ printingand typesetting industry.</string>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="robertfox@gmail.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pg2-L2-9PN">
-                                        <rect key="frame" x="110" y="147" width="135.5" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test@gmail.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pg2-L2-9PN">
+                                        <rect key="frame" x="110" y="132" width="101.5" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="F7V-gX-KJk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Followers: 385" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCG-kW-08x">
+                                        <rect key="frame" x="110" y="157" width="88" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="4r5-d4-O16"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -4352,14 +4388,16 @@ printingand typesetting industry.</string>
                                     <constraint firstItem="XEF-Wc-vXZ" firstAttribute="top" secondItem="sqR-fW-6MC" secondAttribute="top" constant="103" id="5Jn-RQ-o79"/>
                                     <constraint firstItem="4ko-eG-GR8" firstAttribute="leading" secondItem="XEF-Wc-vXZ" secondAttribute="trailing" constant="14" id="7at-SE-MW5"/>
                                     <constraint firstItem="XEF-Wc-vXZ" firstAttribute="leading" secondItem="sqR-fW-6MC" secondAttribute="leading" constant="16" id="9JP-Ug-3Hu"/>
-                                    <constraint firstItem="4ko-eG-GR8" firstAttribute="top" secondItem="sqR-fW-6MC" secondAttribute="top" constant="124" id="IIH-MG-PfV"/>
+                                    <constraint firstItem="GCG-kW-08x" firstAttribute="top" secondItem="pg2-L2-9PN" secondAttribute="bottom" constant="4" id="Gr2-oN-Xoh"/>
+                                    <constraint firstItem="4ko-eG-GR8" firstAttribute="top" secondItem="sqR-fW-6MC" secondAttribute="top" constant="109" id="IIH-MG-PfV"/>
                                     <constraint firstItem="vAu-yQ-P6y" firstAttribute="leading" secondItem="sqR-fW-6MC" secondAttribute="leading" constant="78" id="JYz-sI-jDC"/>
                                     <constraint firstAttribute="height" constant="213" id="Pld-vw-dc0"/>
                                     <constraint firstItem="pg2-L2-9PN" firstAttribute="top" secondItem="4ko-eG-GR8" secondAttribute="bottom" constant="2" id="WTW-pw-5dp"/>
                                     <constraint firstAttribute="width" constant="414" id="hyg-gw-bL3"/>
                                     <constraint firstItem="vAu-yQ-P6y" firstAttribute="top" secondItem="sqR-fW-6MC" secondAttribute="top" constant="152" id="jgP-vg-r2v"/>
-                                    <constraint firstItem="5LW-0Y-sP8" firstAttribute="top" secondItem="sqR-fW-6MC" secondAttribute="top" constant="134" id="pXF-xH-im9"/>
+                                    <constraint firstItem="5LW-0Y-sP8" firstAttribute="top" secondItem="sqR-fW-6MC" secondAttribute="top" constant="127" id="pXF-xH-im9"/>
                                     <constraint firstAttribute="trailing" secondItem="5LW-0Y-sP8" secondAttribute="trailing" constant="16" id="qLy-yv-P3m"/>
+                                    <constraint firstItem="GCG-kW-08x" firstAttribute="leading" secondItem="vAu-yQ-P6y" secondAttribute="trailing" constant="8" symbolic="YES" id="sHH-MT-vZ2"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7s1-ca-4Hp">
@@ -4465,7 +4503,7 @@ printingand typesetting industry.</string>
         <!--My CarVC-->
         <scene sceneID="K8m-A7-iZu">
             <objects>
-                <viewController storyboardIdentifier="MyCarVC" id="PTU-ce-XVd" customClass="MyCarVC" customModule="Carlot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyCarVC" modalTransitionStyle="flipHorizontal" id="PTU-ce-XVd" customClass="MyCarVC" customModule="Carlot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uaH-uW-uvl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -4489,7 +4527,7 @@ printingand typesetting industry.</string>
                                 <rect key="frame" x="0.0" y="76" width="414" height="820"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zDO-jz-KVe">
-                                        <rect key="frame" x="0.0" y="10" width="414" height="810"/>
+                                        <rect key="frame" x="0.0" y="10" width="414" height="710"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="MyCarsTableCell" rowHeight="148" id="uVJ-kR-Jbd" customClass="MyCarsTableCell" customModule="Carlot" customModuleProvider="target">
@@ -4612,13 +4650,33 @@ printingand typesetting industry.</string>
                                             <outlet property="delegate" destination="PTU-ce-XVd" id="rv2-xv-ATY"/>
                                         </connections>
                                     </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyo-Wu-PDk">
+                                        <rect key="frame" x="28" y="728" width="358" height="56"/>
+                                        <color key="backgroundColor" red="0.95686274510000002" green="0.73725490199999999" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="Qux-s4-QNt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy-SemiBold" pointSize="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Add">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="zDO-jz-KVe" secondAttribute="trailing" id="8Zm-NK-Kvl"/>
-                                    <constraint firstAttribute="bottom" secondItem="zDO-jz-KVe" secondAttribute="bottom" id="VYM-Tr-vGY"/>
+                                    <constraint firstItem="lyo-Wu-PDk" firstAttribute="leading" secondItem="72D-EE-w6g" secondAttribute="leading" constant="28" id="91t-5l-tsA"/>
+                                    <constraint firstAttribute="trailing" secondItem="lyo-Wu-PDk" secondAttribute="trailing" constant="28" id="Gpc-r1-Q3N"/>
+                                    <constraint firstItem="lyo-Wu-PDk" firstAttribute="top" secondItem="zDO-jz-KVe" secondAttribute="bottom" constant="8" symbolic="YES" id="N65-xO-Gj1"/>
                                     <constraint firstItem="zDO-jz-KVe" firstAttribute="leading" secondItem="72D-EE-w6g" secondAttribute="leading" id="brc-Oz-mqg"/>
                                     <constraint firstItem="zDO-jz-KVe" firstAttribute="top" secondItem="72D-EE-w6g" secondAttribute="top" constant="10" id="mII-hx-XLA"/>
+                                    <constraint firstAttribute="bottom" secondItem="lyo-Wu-PDk" secondAttribute="bottom" constant="36" id="wpU-9l-bkF"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Cars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lE-IO-tgA">
@@ -4627,12 +4685,19 @@ printingand typesetting industry.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Search" translatesAutoresizingMaskIntoConstraints="NO" id="g24-vo-A7N">
-                                <rect key="frame" x="374" y="44" width="20" height="20"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWm-nk-btG">
+                                <rect key="frame" x="356" y="31" width="45" height="46"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="z6D-VX-qa4"/>
+                                    <constraint firstAttribute="width" constant="45" id="fuf-01-amT"/>
+                                    <constraint firstAttribute="height" constant="46" id="ibS-MX-aNz"/>
                                 </constraints>
-                            </imageView>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Search"/>
+                                <connections>
+                                    <action selector="backBtnClicked:" destination="PTU-ce-XVd" eventType="touchUpInside" id="o1Y-Uc-fup"/>
+                                    <action selector="searchBtnClicked:" destination="PTU-ce-XVd" eventType="touchUpInside" id="ZD5-mh-oDi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Xt7-Cf-Y9E"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -4643,9 +4708,9 @@ printingand typesetting industry.</string>
                             <constraint firstAttribute="bottom" secondItem="Uxx-03-8l7" secondAttribute="bottom" id="QQU-eN-Cuy"/>
                             <constraint firstItem="4lE-IO-tgA" firstAttribute="centerY" secondItem="6hQ-3g-8FA" secondAttribute="centerY" id="UQK-FM-COX"/>
                             <constraint firstItem="Uxx-03-8l7" firstAttribute="trailing" secondItem="Xt7-Cf-Y9E" secondAttribute="trailing" id="V1x-W4-gPf"/>
-                            <constraint firstItem="g24-vo-A7N" firstAttribute="top" secondItem="Xt7-Cf-Y9E" secondAttribute="top" id="dLV-Ig-1hA"/>
+                            <constraint firstItem="BWm-nk-btG" firstAttribute="top" secondItem="uaH-uW-uvl" secondAttribute="top" constant="31" id="Y9L-re-130"/>
+                            <constraint firstItem="Xt7-Cf-Y9E" firstAttribute="trailing" secondItem="BWm-nk-btG" secondAttribute="trailing" constant="13" id="d2z-IX-iOc"/>
                             <constraint firstItem="72D-EE-w6g" firstAttribute="top" secondItem="4lE-IO-tgA" secondAttribute="bottom" constant="12" id="eqW-rU-HJ2"/>
-                            <constraint firstItem="Xt7-Cf-Y9E" firstAttribute="trailing" secondItem="g24-vo-A7N" secondAttribute="trailing" constant="20" id="fGw-ij-ltk"/>
                             <constraint firstItem="72D-EE-w6g" firstAttribute="leading" secondItem="Xt7-Cf-Y9E" secondAttribute="leading" id="iTg-p9-pwE"/>
                             <constraint firstItem="6hQ-3g-8FA" firstAttribute="top" secondItem="Xt7-Cf-Y9E" secondAttribute="top" constant="-13" id="m3R-7b-VLt"/>
                             <constraint firstItem="72D-EE-w6g" firstAttribute="trailing" secondItem="Xt7-Cf-Y9E" secondAttribute="trailing" id="nPF-gd-a11"/>
@@ -4660,7 +4725,7 @@ printingand typesetting industry.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cdf-dj-TRJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-620" y="860"/>
+            <point key="canvasLocation" x="-620.28985507246387" y="859.82142857142856"/>
         </scene>
         <!--NotificationVC-->
         <scene sceneID="8RW-Zs-uwx">
@@ -4851,6 +4916,7 @@ printingand typesetting industry.</string>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" image="Black_Back"/>
                                             <connections>
+                                                <action selector="backBtnClicked:" destination="b4u-rf-5tT" eventType="touchUpInside" id="dp0-l8-gb2"/>
                                                 <action selector="backButtonClicked:" destination="b4u-rf-5tT" eventType="touchUpInside" id="lMc-r8-lIH"/>
                                             </connections>
                                         </button>
@@ -4859,43 +4925,43 @@ printingand typesetting industry.</string>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="23" id="yk5-h5-sjp"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy-SemiBold" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LIMITED TIME OFFER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPO-Zl-xHp">
-                                            <rect key="frame" x="140" y="80" width="154" height="19"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LIMITED TIME OFFER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPO-Zl-xHp">
+                                            <rect key="frame" x="130" y="80" width="154" height="19"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="19" id="ldW-Bu-xD6"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$199" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpd-Ei-sph">
-                                            <rect key="frame" x="180" y="116" width="74" height="30"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$199" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpd-Ei-sph">
+                                            <rect key="frame" x="130" y="116" width="154" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="El4-67-fEO"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                            <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="28"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PREMIUM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y58-zW-2JO">
-                                            <rect key="frame" x="172" y="152" width="99" height="19"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PREMIUM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y58-zW-2JO">
+                                            <rect key="frame" x="130" y="152" width="154" height="19"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="19" id="b6b-zA-Vt7"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unlimited Post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1k6-rT-xby">
-                                            <rect key="frame" x="48" y="331" width="110.5" height="21"/>
+                                            <rect key="frame" x="48" y="331" width="91.5" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="7ux-M0-d2a"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="14"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -4904,11 +4970,11 @@ printingand typesetting industry.</string>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="35" id="OCu-om-kpe"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
                                             <color key="textColor" red="0.50980392159999999" green="0.50980392159999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-check" translatesAutoresizingMaskIntoConstraints="NO" id="txK-3W-cPI">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Right" translatesAutoresizingMaskIntoConstraints="NO" id="txK-3W-cPI">
                                             <rect key="frame" x="13" y="331" width="20" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="9Gr-ef-H4O"/>
@@ -4916,11 +4982,11 @@ printingand typesetting industry.</string>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unlimited Post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twF-sb-v1D">
-                                            <rect key="frame" x="48" y="416" width="110.5" height="21"/>
+                                            <rect key="frame" x="48" y="416" width="91.5" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="CUi-SB-vDl"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="14"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -4929,11 +4995,11 @@ printingand typesetting industry.</string>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="35" id="xWu-mI-QJG"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
                                             <color key="textColor" red="0.50980392159999999" green="0.50980392159999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-check" translatesAutoresizingMaskIntoConstraints="NO" id="VWx-tD-NYL">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Right" translatesAutoresizingMaskIntoConstraints="NO" id="VWx-tD-NYL">
                                             <rect key="frame" x="13" y="416" width="20" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="Uuc-ib-HFl"/>
@@ -4941,11 +5007,11 @@ printingand typesetting industry.</string>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unlimited Post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q98-O2-nPk">
-                                            <rect key="frame" x="48" y="501" width="110.5" height="21"/>
+                                            <rect key="frame" x="48" y="501" width="91.5" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="7cv-ja-vZK"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="14"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -4954,11 +5020,11 @@ printingand typesetting industry.</string>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="35" id="1an-s6-OT5"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
                                             <color key="textColor" red="0.50980392159999999" green="0.50980392159999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-check" translatesAutoresizingMaskIntoConstraints="NO" id="uge-5c-nFn">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Right" translatesAutoresizingMaskIntoConstraints="NO" id="uge-5c-nFn">
                                             <rect key="frame" x="13" y="501" width="20" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="20" id="Fg6-DF-Ylw"/>
@@ -4966,11 +5032,11 @@ printingand typesetting industry.</string>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unlimited Post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eg-5u-KP3">
-                                            <rect key="frame" x="48" y="586" width="110.5" height="21"/>
+                                            <rect key="frame" x="48" y="586" width="91.5" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="Xva-bs-T9H"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="14"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -4979,11 +5045,11 @@ printingand typesetting industry.</string>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="35" id="wWQ-Ap-QI6"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
                                             <color key="textColor" red="0.50980392159999999" green="0.50980392159999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-check" translatesAutoresizingMaskIntoConstraints="NO" id="gGF-YD-WWP">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Right" translatesAutoresizingMaskIntoConstraints="NO" id="gGF-YD-WWP">
                                             <rect key="frame" x="13" y="586" width="20" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="20" id="NLx-WR-wWB"/>
@@ -4996,7 +5062,7 @@ printingand typesetting industry.</string>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="56" id="hy5-hE-5yi"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy-SemiBold" pointSize="20"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" title="Activate Plan">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -5028,32 +5094,32 @@ printingand typesetting industry.</string>
                                         <constraint firstItem="q98-O2-nPk" firstAttribute="leading" secondItem="uge-5c-nFn" secondAttribute="trailing" constant="15" id="PRM-iO-WKl"/>
                                         <constraint firstItem="rwd-pg-oZo" firstAttribute="leading" secondItem="l0A-mX-C1u" secondAttribute="leading" constant="17" id="Qwl-15-l1C"/>
                                         <constraint firstItem="rwd-pg-oZo" firstAttribute="top" secondItem="l0A-mX-C1u" secondAttribute="top" constant="22" id="Tzt-IN-WUO"/>
-                                        <constraint firstAttribute="trailing" secondItem="zpd-Ei-sph" secondAttribute="trailing" constant="160" id="UuJ-kk-J9f"/>
+                                        <constraint firstAttribute="trailing" secondItem="zpd-Ei-sph" secondAttribute="trailing" constant="130" id="UuJ-kk-J9f"/>
                                         <constraint firstItem="q98-O2-nPk" firstAttribute="top" secondItem="by6-pX-IjE" secondAttribute="bottom" constant="27" id="V9C-pc-ldH"/>
                                         <constraint firstItem="twF-sb-v1D" firstAttribute="leading" secondItem="VWx-tD-NYL" secondAttribute="trailing" constant="15" id="XHj-ic-b03"/>
                                         <constraint firstItem="xDs-Ms-9QY" firstAttribute="leading" secondItem="l0A-mX-C1u" secondAttribute="leading" constant="28" id="XPu-TM-EK1"/>
                                         <constraint firstItem="1k6-rT-xby" firstAttribute="leading" secondItem="txK-3W-cPI" secondAttribute="trailing" constant="15" id="Y6H-QK-k9O"/>
-                                        <constraint firstAttribute="trailing" secondItem="y58-zW-2JO" secondAttribute="trailing" constant="143" id="YvW-FA-R4e"/>
+                                        <constraint firstAttribute="trailing" secondItem="y58-zW-2JO" secondAttribute="trailing" constant="130" id="YvW-FA-R4e"/>
                                         <constraint firstItem="Pd9-8b-MjM" firstAttribute="top" secondItem="l0A-mX-C1u" secondAttribute="top" constant="23" id="ahM-0N-UBg"/>
                                         <constraint firstItem="jM6-F9-QYt" firstAttribute="top" secondItem="l0A-mX-C1u" secondAttribute="top" constant="-44" id="baR-uP-oiX"/>
-                                        <constraint firstAttribute="trailing" secondItem="mPO-Zl-xHp" secondAttribute="trailing" constant="120" id="eGY-sc-bli"/>
+                                        <constraint firstAttribute="trailing" secondItem="mPO-Zl-xHp" secondAttribute="trailing" constant="130" id="eGY-sc-bli"/>
                                         <constraint firstItem="1sB-vQ-Jqn" firstAttribute="leading" secondItem="l0A-mX-C1u" secondAttribute="leading" constant="48" id="edN-AO-V0M"/>
                                         <constraint firstItem="zpd-Ei-sph" firstAttribute="top" secondItem="mPO-Zl-xHp" secondAttribute="bottom" constant="17" id="fwi-Mw-Efj"/>
-                                        <constraint firstItem="mPO-Zl-xHp" firstAttribute="leading" secondItem="l0A-mX-C1u" secondAttribute="leading" constant="140" id="gFf-8H-szm"/>
+                                        <constraint firstItem="mPO-Zl-xHp" firstAttribute="leading" secondItem="l0A-mX-C1u" secondAttribute="leading" constant="130" id="gFf-8H-szm"/>
                                         <constraint firstItem="6eg-5u-KP3" firstAttribute="top" secondItem="wYP-qW-kA0" secondAttribute="bottom" constant="27" id="gbj-pB-eWj"/>
                                         <constraint firstItem="gGF-YD-WWP" firstAttribute="leading" secondItem="l0A-mX-C1u" secondAttribute="leading" constant="13" id="i4N-g0-WQs"/>
                                         <constraint firstItem="xDs-Ms-9QY" firstAttribute="top" secondItem="1sB-vQ-Jqn" secondAttribute="bottom" constant="78" id="jF7-As-z7H"/>
                                         <constraint firstAttribute="trailing" secondItem="wYP-qW-kA0" secondAttribute="trailing" constant="19" id="jX6-NA-UII"/>
                                         <constraint firstItem="mPO-Zl-xHp" firstAttribute="top" secondItem="Pd9-8b-MjM" secondAttribute="bottom" constant="34" id="m7Z-yz-AaM"/>
                                         <constraint firstItem="txK-3W-cPI" firstAttribute="top" secondItem="jM6-F9-QYt" secondAttribute="bottom" constant="128" id="nIe-na-ZXZ"/>
-                                        <constraint firstItem="zpd-Ei-sph" firstAttribute="leading" secondItem="l0A-mX-C1u" secondAttribute="leading" constant="180" id="pFG-z8-lmo"/>
+                                        <constraint firstItem="zpd-Ei-sph" firstAttribute="leading" secondItem="l0A-mX-C1u" secondAttribute="leading" constant="130" id="pFG-z8-lmo"/>
                                         <constraint firstItem="by6-pX-IjE" firstAttribute="leading" secondItem="l0A-mX-C1u" secondAttribute="leading" constant="48" id="pUf-8T-xeS"/>
                                         <constraint firstAttribute="trailing" secondItem="1sB-vQ-Jqn" secondAttribute="trailing" constant="19" id="pvS-1R-2e7"/>
                                         <constraint firstItem="uge-5c-nFn" firstAttribute="leading" secondItem="l0A-mX-C1u" secondAttribute="leading" constant="13" id="qew-LB-bYJ"/>
                                         <constraint firstItem="twF-sb-v1D" firstAttribute="top" secondItem="h5p-Nc-LyX" secondAttribute="bottom" constant="27" id="rcL-V8-Jr3"/>
                                         <constraint firstItem="by6-pX-IjE" firstAttribute="top" secondItem="twF-sb-v1D" secondAttribute="bottom" constant="2" id="rfa-mP-uch"/>
                                         <constraint firstItem="wYP-qW-kA0" firstAttribute="top" secondItem="q98-O2-nPk" secondAttribute="bottom" constant="2" id="t9E-2q-4ep"/>
-                                        <constraint firstItem="y58-zW-2JO" firstAttribute="leading" secondItem="l0A-mX-C1u" secondAttribute="leading" constant="172" id="tWi-1b-M8S"/>
+                                        <constraint firstItem="y58-zW-2JO" firstAttribute="leading" secondItem="l0A-mX-C1u" secondAttribute="leading" constant="130" id="tWi-1b-M8S"/>
                                         <constraint firstItem="jM6-F9-QYt" firstAttribute="leading" secondItem="l0A-mX-C1u" secondAttribute="leading" id="vNJ-Hv-UnK"/>
                                         <constraint firstAttribute="trailing" secondItem="jM6-F9-QYt" secondAttribute="trailing" id="wnj-hq-cm1"/>
                                         <constraint firstItem="gGF-YD-WWP" firstAttribute="top" secondItem="uge-5c-nFn" secondAttribute="bottom" constant="65" id="z9T-wW-puI"/>
@@ -5078,7 +5144,7 @@ printingand typesetting industry.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7nR-YR-FLW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="822" y="866"/>
+            <point key="canvasLocation" x="821.73913043478262" y="865.84821428571422"/>
         </scene>
         <!--Contact UsVC-->
         <scene sceneID="ztZ-mB-jU5">
@@ -5136,7 +5202,7 @@ printingand typesetting industry.</string>
                                                 <constraint firstAttribute="height" constant="50" id="xDy-oD-VmA"/>
                                             </constraints>
                                         </imageView>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email_contact" translatesAutoresizingMaskIntoConstraints="NO" id="wUd-0O-snT">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email_contact-1" translatesAutoresizingMaskIntoConstraints="NO" id="wUd-0O-snT">
                                             <rect key="frame" x="16" y="125" width="50" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="N9e-n4-uIv"/>
@@ -5645,6 +5711,145 @@ printingand typesetting industry.</string>
             </objects>
             <point key="canvasLocation" x="-1307.2463768115942" y="859.82142857142856"/>
         </scene>
+        <!--Chat ListVC-->
+        <scene sceneID="dGx-ex-CZQ">
+            <objects>
+                <viewController storyboardIdentifier="ChatListVC" id="0uq-Os-7uc" customClass="ChatListVC" customModule="Carlot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wv0-CS-ZeO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_image" translatesAutoresizingMaskIntoConstraints="NO" id="zwi-4c-n3a">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tg4-Ba-QGg">
+                                <rect key="frame" x="19" y="44" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="F7f-MD-N7i"/>
+                                    <constraint firstAttribute="height" constant="24" id="JJ7-xj-Rmg"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="Back"/>
+                                <connections>
+                                    <action selector="backBtnClicked:" destination="0uq-Os-7uc" eventType="touchUpInside" id="ARe-8i-rhq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCG-iG-6cK">
+                                <rect key="frame" x="90" y="45" width="235" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="0TF-1w-eI9"/>
+                                    <constraint firstAttribute="width" constant="235" id="Nki-pk-NXB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7kh-BT-CU7">
+                                <rect key="frame" x="0.0" y="81" width="414" height="815"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ChatListCell" rowHeight="80" id="ESj-b7-bbT" customClass="ChatListCell" customModule="Carlot" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ESj-b7-bbT" id="Z8z-st-dXK">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esther Howard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6N-At-oVK">
+                                                    <rect key="frame" x="80" y="20" width="107" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="18" id="hZO-QF-DL2"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="16"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photographer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAu-g5-Dee">
+                                                    <rect key="frame" x="80" y="38" width="90" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="hSY-nw-6IE"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
+                                                    <color key="textColor" red="0.50980392159999999" green="0.50980392159999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 min ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxU-fd-wl2">
+                                                    <rect key="frame" x="323" y="18.5" width="62" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="nqD-Sb-jai"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
+                                                    <color key="textColor" red="0.50980392159999999" green="0.50980392159999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_user" translatesAutoresizingMaskIntoConstraints="NO" id="ood-19-xFc">
+                                                    <rect key="frame" x="16" y="19" width="55" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="55" id="5Cd-oH-Wir"/>
+                                                        <constraint firstAttribute="height" constant="50" id="SGZ-K0-fX5"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="E6N-At-oVK" firstAttribute="leading" secondItem="ood-19-xFc" secondAttribute="trailing" constant="9" id="4Se-Mw-0vs"/>
+                                                <constraint firstAttribute="bottom" secondItem="ood-19-xFc" secondAttribute="bottom" constant="11" id="CRu-Pg-fqv"/>
+                                                <constraint firstItem="mAu-g5-Dee" firstAttribute="top" secondItem="E6N-At-oVK" secondAttribute="bottom" id="CV3-Gj-Y3j"/>
+                                                <constraint firstItem="IxU-fd-wl2" firstAttribute="top" secondItem="Z8z-st-dXK" secondAttribute="topMargin" constant="7.5" id="RT9-Aq-uf8"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="IxU-fd-wl2" secondAttribute="trailing" constant="9" id="SPu-bn-m7u"/>
+                                                <constraint firstItem="ood-19-xFc" firstAttribute="leading" secondItem="Z8z-st-dXK" secondAttribute="leading" constant="16" id="ZjF-Af-Q2d"/>
+                                                <constraint firstItem="mAu-g5-Dee" firstAttribute="leading" secondItem="ood-19-xFc" secondAttribute="trailing" constant="9" id="if3-wg-idW"/>
+                                                <constraint firstItem="E6N-At-oVK" firstAttribute="top" secondItem="Z8z-st-dXK" secondAttribute="topMargin" constant="9" id="yM8-0P-uw3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="image_Chatuser" destination="ood-19-xFc" id="bAB-7w-MuO"/>
+                                            <outlet property="lbl_ChatUserName" destination="E6N-At-oVK" id="AGv-5U-1L5"/>
+                                            <outlet property="lbl_UserProfession" destination="mAu-g5-Dee" id="ezR-Uy-QP7"/>
+                                            <outlet property="lbl_chattime" destination="IxU-fd-wl2" id="YKG-vy-FSv"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6eK-Wa-khz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zwi-4c-n3a" firstAttribute="top" secondItem="Wv0-CS-ZeO" secondAttribute="top" id="7Pg-qd-POW"/>
+                            <constraint firstItem="7kh-BT-CU7" firstAttribute="leading" secondItem="6eK-Wa-khz" secondAttribute="leading" id="Aaf-oR-UrQ"/>
+                            <constraint firstItem="7kh-BT-CU7" firstAttribute="trailing" secondItem="6eK-Wa-khz" secondAttribute="trailing" id="DEF-wH-fIC"/>
+                            <constraint firstItem="zwi-4c-n3a" firstAttribute="leading" secondItem="6eK-Wa-khz" secondAttribute="leading" id="Jlq-V5-0Pl"/>
+                            <constraint firstItem="tg4-Ba-QGg" firstAttribute="leading" secondItem="6eK-Wa-khz" secondAttribute="leading" constant="19" id="V65-Qy-2Y8"/>
+                            <constraint firstItem="zwi-4c-n3a" firstAttribute="trailing" secondItem="6eK-Wa-khz" secondAttribute="trailing" id="bOo-jc-avn"/>
+                            <constraint firstItem="6eK-Wa-khz" firstAttribute="trailing" secondItem="sCG-iG-6cK" secondAttribute="trailing" constant="89" id="cfB-qz-PRt"/>
+                            <constraint firstAttribute="bottom" secondItem="zwi-4c-n3a" secondAttribute="bottom" id="hpU-ak-e8I"/>
+                            <constraint firstItem="7kh-BT-CU7" firstAttribute="top" secondItem="tg4-Ba-QGg" secondAttribute="bottom" constant="13" id="kFV-o5-nPG"/>
+                            <constraint firstItem="tg4-Ba-QGg" firstAttribute="top" secondItem="6eK-Wa-khz" secondAttribute="top" id="l1u-HX-Byz"/>
+                            <constraint firstItem="sCG-iG-6cK" firstAttribute="top" secondItem="6eK-Wa-khz" secondAttribute="top" constant="1" id="l26-ce-Q9b"/>
+                            <constraint firstAttribute="bottom" secondItem="7kh-BT-CU7" secondAttribute="bottom" id="rZg-c3-dNE"/>
+                            <constraint firstItem="sCG-iG-6cK" firstAttribute="leading" secondItem="tg4-Ba-QGg" secondAttribute="trailing" constant="47" id="uQQ-ge-EoO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chatList_tbl" destination="7kh-BT-CU7" id="yTa-eW-lDi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CAK-UV-LxE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1579.7101449275362" y="-500.22321428571428"/>
+        </scene>
     </scenes>
     <designables>
         <designable name="2Bg-SV-edg">
@@ -5669,6 +5874,7 @@ printingand typesetting industry.</string>
         <image name="Filter" width="24" height="24"/>
         <image name="LikeBtn" width="38" height="38"/>
         <image name="NextBtn" width="78" height="52.5"/>
+        <image name="Right" width="12" height="9"/>
         <image name="RightArrow" width="24" height="24"/>
         <image name="Search" width="20" height="20"/>
         <image name="ShareBtn" width="30" height="30"/>
@@ -5685,8 +5891,9 @@ printingand typesetting industry.</string>
         <image name="downarrow" width="8" height="4.5"/>
         <image name="dummy_user" width="40" height="40"/>
         <image name="email_contact" width="44" height="44"/>
+        <image name="email_contact-1" width="44" height="44"/>
         <image name="flag" width="25" height="15"/>
-        <image name="icon-check" width="18" height="18"/>
+        <image name="hidePass" width="21" height="19"/>
         <image name="iconApp" width="122" height="54.5"/>
         <image name="icon_app" width="122" height="54.5"/>
         <image name="klipartz 1" width="118" height="70"/>
@@ -5694,7 +5901,6 @@ printingand typesetting industry.</string>
         <image name="membership" width="375" height="228"/>
         <image name="radioBlank" width="18" height="18"/>
         <image name="search_icon" width="15" height="15"/>
-        <image name="secure_txt" width="21" height="15.5"/>
         <image name="user" width="37" height="37"/>
         <namedColor name="TxtColor">
             <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>

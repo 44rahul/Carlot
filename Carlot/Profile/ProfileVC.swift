@@ -21,7 +21,7 @@ class ProfileVC: UIViewController {
         super.viewDidLoad()
         
         ArrProfileInfo = ["Name", "Email", "Mobile number", "Password", "National Identity","License Number","Card tax Registration Number","Address"]
-        ArrProfileData = ["Robert Fox", "robertfox@gmail.com" ,"+1650-723-2300", "1234567890", "Indian", "NT-79043/GZB 11/8/22" , "NH-509021/GZB /200950 ", "C/102, Via Giuseppe Orlandi, C 80071 Anac apri NA, Orlandi India"]
+        ArrProfileData = ["Robert Fox", "robertfox@gmail.com" ,"+1650-723-2300", "**********", "Indian", "NT-79043/GZB 11/8/22" , "NH-509021/GZB /200950 ", "C/102, Via Giuseppe Orlandi, C 80071 Anac apri NA, Orlandi India"]
 
         // Do any additional setup after loading the view.
     }
@@ -57,7 +57,8 @@ extension ProfileVC : UITableViewDelegate, UITableViewDataSource
 //        if indexPath.row == 3{
 //            cell.txt_address.isSecureTextEntry = true
 //        }
-//        
+               cell.selectionStyle = .none
+
         return cell
     }
     

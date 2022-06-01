@@ -45,7 +45,8 @@ class SearchVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! SearchTableViewCell
         cell.searchSugglbl.text = SearchSuggestionArr[indexPath.row]
-        
+        cell.selectionStyle = .none
+
         return cell
         
         

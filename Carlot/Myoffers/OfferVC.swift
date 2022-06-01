@@ -40,7 +40,8 @@ extension OfferVC : UITableViewDelegate, UITableViewDataSource{
         cell.mainView.layer.borderColor = UIColor.gray.cgColor
         cell.mainView.layer.cornerRadius = 10.0
         cell.mainView.layer.borderWidth = 0.5
-        
+        cell.selectionStyle = .none
+
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

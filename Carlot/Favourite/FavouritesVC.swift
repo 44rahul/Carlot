@@ -29,7 +29,8 @@ class FavouritesVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! FavouritesTableViewCell
      //   cell.searchSugglbl.text = SearchSuggestionArr[indexPath.row]
-        
+        cell.selectionStyle = .none
+
         return cell
         
         

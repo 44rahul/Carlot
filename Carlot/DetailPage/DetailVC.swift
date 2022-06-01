@@ -45,14 +45,17 @@ class DetailVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         
     }
         
+    @IBAction func cahtBtnClicked(_ sender: Any) {
         
+        let vc = ChatListVC.instance(.main) as! ChatListVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     @IBAction func sendBtnClicked(_ sender: Any) {
         
         makeAnOfferView.isHidden = true
 
     }
-    
-    
     
     @IBAction func ratingBtnClicked(_ sender: Any) {
         
@@ -88,7 +91,8 @@ class DetailVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! ProductTableCell
         //   cell.searchSugglbl.text = SearchSuggestionArr[indexPath.row]
-        
+        cell.selectionStyle = .none
+
         return cell
         
         

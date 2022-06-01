@@ -65,7 +65,8 @@ extension MyOrderVC : UITableViewDelegate, UITableViewDataSource{
         cell.Model_Status.text = ArrModelStatus[indexPath.row]
         cell.model_Name.text = ArrModelName[indexPath.row]
         //cell.unfollow_btn.layer.cornerRadius = 6.0
-        
+        cell.selectionStyle = .none
+
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

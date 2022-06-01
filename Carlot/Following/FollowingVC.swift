@@ -47,7 +47,8 @@ extension FollowingVC : UITableViewDelegate, UITableViewDataSource{
         let follower_int = ArrFollowerCount[indexPath.row]
         cell.following_count.text = String (follower_int) + " Followers"
         cell.unfollow_btn.layer.cornerRadius = 6.0
-        
+        cell.selectionStyle = .none
+
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

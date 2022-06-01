@@ -49,13 +49,16 @@ class HomeVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Cell1") as! BannerTableCell
             
             cell.bannerImgView.image = UIImage(named: "BannerTest")
-            
+            cell.selectionStyle = .none
+
             return cell
             
         }else if indexPath.row == 1 {
             
             let cell1 = tableView.dequeueReusableCell(withIdentifier: "Cell2") as! BrandTableCell
             cell1.CatNavigation = self.navigationController
+            cell1.selectionStyle = .none
+
             return cell1
             
         }else

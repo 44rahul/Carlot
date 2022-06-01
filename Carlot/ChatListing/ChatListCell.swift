@@ -1,15 +1,21 @@
 //
-//  TransactionCell.swift
+//  ChatListCell.swift
 //  Carlot
 //
-//  Created by emizentech on 5/25/22.
+//  Created by emizentech on 5/20/22.
 //
 
 import UIKit
 
-class TransactionCell: UITableViewCell {
+class ChatListCell: UITableViewCell {
 
-    @IBOutlet weak var ratnow: UIButton!
+    @IBOutlet weak var image_Chatuser: UIImageView!
+    
+    @IBOutlet weak var lbl_UserProfession: UILabel!
+    @IBOutlet weak var lbl_ChatUserName: UILabel!
+    @IBOutlet weak var lbl_chattime: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

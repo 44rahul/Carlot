@@ -25,6 +25,10 @@ class addAddressVC: UIViewController {
         SetTextField()
 
     }
+    @IBAction func backBtnClicked(_ sender: Any) {
+        
+        self.navigationController?.popViewController(animated: true)
+    }
     
     func SetTextField() {
         

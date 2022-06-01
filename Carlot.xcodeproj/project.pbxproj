@@ -93,6 +93,8 @@
 		73C84EAA2837728200A4103F /* AddPostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C84EA92837728200A4103F /* AddPostCollectionViewCell.swift */; };
 		73CCBB822840B06A00C4DC6C /* BaseTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CCBB812840B06A00C4DC6C /* BaseTabVC.swift */; };
 		73DAC72E28367D8100825E8C /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DAC72D28367D8100825E8C /* AddPostVC.swift */; };
+		73EA45A4284746C500C52DFF /* ChatListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EA45A2284746C500C52DFF /* ChatListVC.swift */; };
+		73EA45A5284746C500C52DFF /* ChatListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EA45A3284746C500C52DFF /* ChatListCell.swift */; };
 		757BD14F283E4EFE008410A6 /* TransactionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757BD14E283E4EFE008410A6 /* TransactionVC.swift */; };
 		757BD151283E4F29008410A6 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757BD150283E4F29008410A6 /* TransactionCell.swift */; };
 		826AA0DA64FAFD960E6BBF79 /* Pods_Carlot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 156C9C046BF4A7109A6026F7 /* Pods_Carlot.framework */; };
@@ -189,6 +191,8 @@
 		73C84EA92837728200A4103F /* AddPostCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostCollectionViewCell.swift; sourceTree = "<group>"; };
 		73CCBB812840B06A00C4DC6C /* BaseTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabVC.swift; sourceTree = "<group>"; };
 		73DAC72D28367D8100825E8C /* AddPostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
+		73EA45A2284746C500C52DFF /* ChatListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatListVC.swift; sourceTree = "<group>"; };
+		73EA45A3284746C500C52DFF /* ChatListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatListCell.swift; sourceTree = "<group>"; };
 		757BD14E283E4EFE008410A6 /* TransactionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionVC.swift; sourceTree = "<group>"; };
 		757BD150283E4F29008410A6 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
 		F0DB0B746CA02A864B93D2F8 /* Pods-Carlot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carlot.debug.xcconfig"; path = "Target Support Files/Pods-Carlot/Pods-Carlot.debug.xcconfig"; sourceTree = "<group>"; };
@@ -244,6 +248,7 @@
 		730E7CCF281978DF0098EB17 /* Carlot */ = {
 			isa = PBXGroup;
 			children = (
+				73EA45A1284746B600C52DFF /* ChatListing */,
 				737A3D3E2845EA5800BA7735 /* Myoffers */,
 				732074432844E7A7001762B6 /* HomeCategory */,
 				732074402844E57C001762B6 /* ContactUs */,
@@ -680,6 +685,15 @@
 			path = "Add Post";
 			sourceTree = "<group>";
 		};
+		73EA45A1284746B600C52DFF /* ChatListing */ = {
+			isa = PBXGroup;
+			children = (
+				73EA45A3284746C500C52DFF /* ChatListCell.swift */,
+				73EA45A2284746C500C52DFF /* ChatListVC.swift */,
+			);
+			path = ChatListing;
+			sourceTree = "<group>";
+		};
 		757BD14D283E4EDE008410A6 /* Transaction */ = {
 			isa = PBXGroup;
 			children = (
@@ -873,6 +887,7 @@
 				737997CE2834E09B00AA3A7C /* CustomPopViewViewGuest.swift in Sources */,
 				73CCBB822840B06A00C4DC6C /* BaseTabVC.swift in Sources */,
 				73BB5CCC28210139005B6155 /* BrandTableCell.swift in Sources */,
+				73EA45A4284746C500C52DFF /* ChatListVC.swift in Sources */,
 				737997F52835048500AA3A7C /* OthersSideCell.swift in Sources */,
 				73B320DE282943E50024BBE3 /* ReviewsTableViewCell.swift in Sources */,
 				73BC46CF2834D5410094A886 /* SelectLocationVC.swift in Sources */,
@@ -893,6 +908,7 @@
 				737881E4282BA60600CEB2B2 /* addAddressVC.swift in Sources */,
 				73DAC72E28367D8100825E8C /* AddPostVC.swift in Sources */,
 				737997DF2834FF9D00AA3A7C /* ProfileCell.swift in Sources */,
+				73EA45A5284746C500C52DFF /* ChatListCell.swift in Sources */,
 				737881E0282B789800CEB2B2 /* AddressVC.swift in Sources */,
 				737997CF2834E09B00AA3A7C /* CustomPopView.swift in Sources */,
 				7376432E28364BDA0086C93D /* FavouritesVC.swift in Sources */,

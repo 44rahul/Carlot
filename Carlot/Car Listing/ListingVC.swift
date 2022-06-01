@@ -36,7 +36,8 @@ class ListingVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! ProductTableCell
      //   cell.searchSugglbl.text = SearchSuggestionArr[indexPath.row]
-        
+        cell.selectionStyle = .none
+
         return cell
         
         

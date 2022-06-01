@@ -80,6 +80,8 @@ extension EditProfileVC : UITableViewDelegate, UITableViewDataSource{
         cell.txtEditInfo.text = self.ArrEditInfo[indexPath.row]
         //cell.save_btn.addTarget(self, action: #selector(selected(sender:)), for: .touchUpInside)
         cell.change_btn.addTarget(self, action: #selector(selected(sender:)), for: .touchUpInside)
+        cell.selectionStyle = .none
+
         return cell
     }
     

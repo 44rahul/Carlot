@@ -14,6 +14,10 @@ class ChangePasswordVC: UIViewController {
     @IBOutlet weak var txtNewPassword : UITextField!
     @IBOutlet weak var txtConfirmPassword : UITextField!
     
+    @IBOutlet weak var confirmPassBtn: UIButton!
+    @IBOutlet weak var currentPassBtn: UIButton!
+    @IBOutlet weak var NewPassBtn: UIButton!
+    
     var IsConditionChecked: Bool = true
     
     override func viewDidLoad() {
@@ -68,9 +72,14 @@ class ChangePasswordVC: UIViewController {
         if IsConditionChecked{
             txtCurrentPassword.isSecureTextEntry = false
             IsConditionChecked = false
+
+            currentPassBtn.setImage(UIImage (named: "secure_txt"), for: .normal)
+
         }else{
             txtCurrentPassword.isSecureTextEntry = true
             IsConditionChecked = true
+            currentPassBtn.setImage(UIImage(named: "hidePass"), for: .normal)
+
         }
     }
     
@@ -78,9 +87,13 @@ class ChangePasswordVC: UIViewController {
         if IsConditionChecked{
             txtNewPassword.isSecureTextEntry = false
             IsConditionChecked = false
+            NewPassBtn.setImage(UIImage (named: "secure_txt"), for: .normal)
+
         }else{
             txtNewPassword.isSecureTextEntry = true
             IsConditionChecked = true
+            NewPassBtn.setImage(UIImage(named: "hidePass"), for: .normal)
+
         }
     }
     
@@ -88,9 +101,13 @@ class ChangePasswordVC: UIViewController {
         if IsConditionChecked{
             txtConfirmPassword.isSecureTextEntry = false
             IsConditionChecked = false
+            confirmPassBtn.setImage(UIImage (named: "secure_txt"), for: .normal)
+
         }else{
             txtConfirmPassword.isSecureTextEntry = true
             IsConditionChecked = true
+            confirmPassBtn.setImage(UIImage(named: "hidePass"), for: .normal)
+
         }
     }
 }

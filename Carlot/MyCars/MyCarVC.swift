@@ -20,6 +20,12 @@ class MyCarVC: UIViewController , UITableViewDelegate , UITableViewDataSource {
         
 
     }
+    @IBAction func searchBtnClicked(_ sender: Any) {
+     
+        let vc = SearchVC.instance(.main) as! SearchVC
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
     @IBAction func backBtnClicked(_ sender: Any) {
         
         self.navigationController?.popViewController(animated: true)
@@ -35,7 +41,8 @@ class MyCarVC: UIViewController , UITableViewDelegate , UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyCarsTableCell") as! MyCarsTableCell
-     
+        cell.selectionStyle = .none
+
         
         return cell
         

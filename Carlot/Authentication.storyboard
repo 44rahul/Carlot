@@ -45,53 +45,34 @@
                                                 <constraint firstAttribute="height" constant="75" id="RkC-he-7UJ"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGj-3z-sba">
-                                            <rect key="frame" x="17" y="152" width="364" height="45"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGj-3z-sba">
+                                            <rect key="frame" x="17" y="150" width="364" height="28"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="45" id="9ug-yT-wLs"/>
+                                                <constraint firstAttribute="height" constant="28" id="9ug-yT-wLs"/>
                                             </constraints>
-                                            <attributedString key="attributedText">
-                                                <fragment content="Hi, WelCome">
-                                                    <attributes>
-                                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <font key="NSFont" metaFont="system" size="22"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                            <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy-SemiBold" pointSize="22"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5P4-ei-vjv">
-                                            <rect key="frame" x="17" y="199" width="375" height="16"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please fill the field login" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5P4-ei-vjv">
+                                            <rect key="frame" x="17" y="180" width="375" height="16"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="16" id="7Ad-3p-5bg"/>
                                             </constraints>
-                                            <attributedString key="attributedText">
-                                                <fragment content="Please fill the field login">
-                                                    <attributes>
-                                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <font key="NSFont" metaFont="system" size="14"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                            <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZuL-uS-9OV">
-                                            <rect key="frame" x="17" y="240" width="380" height="527"/>
+                                            <rect key="frame" x="17" y="205" width="380" height="527"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lt-Nu-87e">
-                                                    <rect key="frame" x="15" y="31" width="154.5" height="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email/Mobile Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lt-Nu-87e">
+                                                    <rect key="frame" x="15" y="31" width="139.5" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="fCV-cS-CXZ"/>
                                                     </constraints>
-                                                    <attributedString key="attributedText">
-                                                        <fragment content="Email/Mobile Number">
-                                                            <attributes>
-                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <font key="NSFont" metaFont="system" size="16"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test@gmail.com" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YYx-Km-ARn">
@@ -101,25 +82,19 @@
                                                         <constraint firstAttribute="height" constant="56" id="mkS-qh-5Kc"/>
                                                     </constraints>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hH3-9l-GCP">
-                                                    <rect key="frame" x="15" y="134" width="62.5" height="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hH3-9l-GCP">
+                                                    <rect key="frame" x="15" y="134" width="61" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="Qkq-Yl-BvL"/>
                                                     </constraints>
-                                                    <attributedString key="attributedText">
-                                                        <fragment content="Password">
-                                                            <attributes>
-                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <font key="NSFont" metaFont="system" size="14"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test@123" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qac-ZZ-DaU">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1234567" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qac-ZZ-DaU">
                                                     <rect key="frame" x="15" y="161" width="350" height="56"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
@@ -144,40 +119,28 @@
                                                         <action selector="btnSecureText:" destination="ru9-cX-xKC" eventType="touchUpInside" id="nGa-ZP-u3h"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rIQ-94-4hv">
-                                                    <rect key="frame" x="245" y="227" width="120" height="17"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIQ-94-4hv">
+                                                    <rect key="frame" x="246" y="227" width="119" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="In3-f2-AEC"/>
                                                     </constraints>
+                                                    <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy-SemiBold" pointSize="14"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                    <state key="normal">
-                                                        <attributedString key="attributedTitle">
-                                                            <fragment content="Forgot Password ?">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.95686274509803915" green="0.73725490196078436" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" metaFont="system" size="14"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                        </attributedString>
+                                                    <state key="normal" title="Forgot Password ?">
+                                                        <color key="titleColor" red="0.95686274509803915" green="0.73725490196078436" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                     <connections>
                                                         <action selector="btnForgotCliked:" destination="ru9-cX-xKC" eventType="touchUpInside" id="sfx-JF-4Ao"/>
                                                     </connections>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrC-rR-UZF">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrC-rR-UZF">
                                                     <rect key="frame" x="15" y="286" width="75" height="27"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="27" id="S0l-hS-Koh"/>
                                                         <constraint firstAttribute="width" constant="75" id="znM-jg-BVR"/>
                                                     </constraints>
-                                                    <attributedString key="attributedText">
-                                                        <fragment content="Login">
-                                                            <attributes>
-                                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <font key="NSFont" metaFont="system" size="22"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy-SemiBold" pointSize="22"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hL8-ug-UnM">
@@ -227,29 +190,23 @@
                                                     </subviews>
                                                 </stackView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4E-7I-JzF">
-                                                    <rect key="frame" x="87" y="475" width="152" height="20.5"/>
+                                                    <rect key="frame" x="87" y="475" width="154" height="20.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20.5" id="fJL-QO-SRb"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="14"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K5m-2C-NDC">
-                                                    <rect key="frame" x="242" y="475" width="51" height="20.5"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5m-2C-NDC">
+                                                    <rect key="frame" x="244" y="475" width="50" height="20.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20.5" id="cEp-y5-qv3"/>
                                                     </constraints>
+                                                    <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy-SemiBold" pointSize="14"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                    <state key="normal">
-                                                        <attributedString key="attributedTitle">
-                                                            <fragment content="Sign Up">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.95686274509803915" green="0.73725490196078436" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" metaFont="system" size="14"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                        </attributedString>
+                                                    <state key="normal" title="Sign Up">
+                                                        <color key="titleColor" red="0.95686274509803915" green="0.73725490196078436" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                     <connections>
                                                         <action selector="btnSignupClicked:" destination="ru9-cX-xKC" eventType="touchUpInside" id="D6q-ES-stB"/>
@@ -290,10 +247,10 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstItem="ZuL-uS-9OV" firstAttribute="top" secondItem="5P4-ei-vjv" secondAttribute="bottom" constant="25" id="0Vb-Yb-6PB"/>
+                                        <constraint firstItem="ZuL-uS-9OV" firstAttribute="top" secondItem="5P4-ei-vjv" secondAttribute="bottom" constant="9" id="0Vb-Yb-6PB"/>
                                         <constraint firstItem="hol-Hm-VeT" firstAttribute="leading" secondItem="jUu-J3-dtF" secondAttribute="leading" constant="127" id="5as-6y-d9j"/>
                                         <constraint firstItem="5P4-ei-vjv" firstAttribute="top" secondItem="DGj-3z-sba" secondAttribute="bottom" constant="2" id="BOP-Np-Zsz"/>
-                                        <constraint firstItem="DGj-3z-sba" firstAttribute="top" secondItem="hol-Hm-VeT" secondAttribute="bottom" constant="32" id="L8Z-ws-Czl"/>
+                                        <constraint firstItem="DGj-3z-sba" firstAttribute="top" secondItem="hol-Hm-VeT" secondAttribute="bottom" constant="30" id="L8Z-ws-Czl"/>
                                         <constraint firstAttribute="trailing" secondItem="ZuL-uS-9OV" secondAttribute="trailing" constant="17" id="Vp0-iR-JfW"/>
                                         <constraint firstAttribute="trailing" secondItem="5P4-ei-vjv" secondAttribute="trailing" constant="22" id="YC9-qB-mkY"/>
                                         <constraint firstAttribute="trailing" secondItem="hol-Hm-VeT" secondAttribute="trailing" constant="127" id="Yh2-LZ-7xj"/>
@@ -335,7 +292,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WVf-LR-80F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="174" y="-1248"/>
+            <point key="canvasLocation" x="173.91304347826087" y="-1248.2142857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TCx-Qs-Vlt">
@@ -380,53 +337,34 @@
                                                 <constraint firstAttribute="height" constant="75" id="WSH-43-iyA"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PfB-Pn-7N9">
-                                            <rect key="frame" x="17" y="152" width="364" height="45"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Your Account" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PfB-Pn-7N9">
+                                            <rect key="frame" x="17" y="170" width="364" height="27"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="45" id="rEt-n2-4jm"/>
+                                                <constraint firstAttribute="height" constant="27" id="rEt-n2-4jm"/>
                                             </constraints>
-                                            <attributedString key="attributedText">
-                                                <fragment content="Create Your Account">
-                                                    <attributes>
-                                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <font key="NSFont" metaFont="system" size="22"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                            <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy-SemiBold" pointSize="22"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="67B-SF-7sI">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please fill the field to continue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="67B-SF-7sI">
                                             <rect key="frame" x="17" y="199" width="375" height="16"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="16" id="22N-bu-ypF"/>
                                             </constraints>
-                                            <attributedString key="attributedText">
-                                                <fragment content="Please fill the field to continue">
-                                                    <attributes>
-                                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <font key="NSFont" metaFont="system" size="14"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                            <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6zf-xD-QOr">
                                             <rect key="frame" x="17" y="240" width="380" height="996"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CjA-IK-QcZ">
-                                                    <rect key="frame" x="15" y="31" width="38" height="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CjA-IK-QcZ">
+                                                    <rect key="frame" x="15" y="31" width="39" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="UF7-52-iGJ"/>
                                                     </constraints>
-                                                    <attributedString key="attributedText">
-                                                        <fragment content="Name">
-                                                            <attributes>
-                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <font key="NSFont" metaFont="system" size="14"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rZE-Jl-lDn">
@@ -439,34 +377,22 @@
                                                     <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbM-vA-Kwm">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbM-vA-Kwm">
                                                     <rect key="frame" x="15" y="134" width="34.5" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="92w-np-LNu"/>
                                                     </constraints>
-                                                    <attributedString key="attributedText">
-                                                        <fragment content="Email">
-                                                            <attributes>
-                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <font key="NSFont" metaFont="system" size="14"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZx-Bw-Zsl">
-                                                    <rect key="frame" x="15" y="237" width="99" height="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZx-Bw-Zsl">
+                                                    <rect key="frame" x="15" y="237" width="98" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="EoH-ik-vBA"/>
                                                     </constraints>
-                                                    <attributedString key="attributedText">
-                                                        <fragment content="Mobile Number">
-                                                            <attributes>
-                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <font key="NSFont" metaFont="system" size="14"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2W-tO-ec3">
@@ -475,23 +401,17 @@
                                                         <constraint firstAttribute="height" constant="17" id="aGM-8H-TDY"/>
                                                         <constraint firstAttribute="width" constant="131" id="t5l-Ru-hDX"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FI2-kF-vbh">
-                                                    <rect key="frame" x="15" y="752" width="117.5" height="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FI2-kF-vbh">
+                                                    <rect key="frame" x="15" y="752" width="115.5" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="iDs-NI-Kby"/>
                                                     </constraints>
-                                                    <attributedString key="attributedText">
-                                                        <fragment content="Confirm Password">
-                                                            <attributes>
-                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <font key="NSFont" metaFont="system" size="14"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OqX-gS-zHP">
@@ -520,7 +440,7 @@
                                                         <constraint firstAttribute="height" constant="17" id="BvZ-nA-Sep"/>
                                                         <constraint firstAttribute="width" constant="131" id="VwL-tc-SJK"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -540,7 +460,7 @@
                                                         <constraint firstAttribute="width" constant="131" id="BEc-Il-uby"/>
                                                         <constraint firstAttribute="height" constant="17" id="lNm-MS-7C4"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -568,19 +488,13 @@
                                                         <action selector="SecureConfirmPasswordText:" destination="O6B-8H-ZiU" eventType="touchUpInside" id="cvv-R6-lT5"/>
                                                     </connections>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zZ-Ia-C3f">
-                                                    <rect key="frame" x="15" y="872" width="75.5" height="27"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zZ-Ia-C3f">
+                                                    <rect key="frame" x="15" y="872" width="78.5" height="27"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="27" id="8M4-Re-8qa"/>
                                                     </constraints>
-                                                    <attributedString key="attributedText">
-                                                        <fragment content="Sign Up">
-                                                            <attributes>
-                                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <font key="NSFont" metaFont="system" size="22"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy-SemiBold" pointSize="22"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBO-xd-LbB">
@@ -595,29 +509,23 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJU-ks-slY">
-                                                    <rect key="frame" x="64" y="942.5" width="165.5" height="20.5"/>
+                                                    <rect key="frame" x="73" y="942.5" width="169" height="20.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20.5" id="Uh5-pj-DHM"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="14"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bti-n2-wZH">
-                                                    <rect key="frame" x="207.5" y="942" width="83" height="20.5"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bti-n2-wZH">
+                                                    <rect key="frame" x="228" y="942" width="79.5" height="20.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20.5" id="kgx-uo-e1p"/>
                                                     </constraints>
+                                                    <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy-SemiBold" pointSize="14"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                    <state key="normal">
-                                                        <attributedString key="attributedTitle">
-                                                            <fragment content="Sign In">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.95686274509803915" green="0.73725490196078436" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" metaFont="system" size="14"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                        </attributedString>
+                                                    <state key="normal" title="Sign In">
+                                                        <color key="titleColor" red="0.95686274509803915" green="0.73725490196078436" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                     <connections>
                                                         <action selector="MoveToLoginView:" destination="O6B-8H-ZiU" eventType="touchUpInside" id="0Oc-tV-msC"/>
@@ -732,7 +640,7 @@
                                                         <constraint firstAttribute="height" constant="17" id="57z-xL-9id"/>
                                                         <constraint firstAttribute="width" constant="231" id="pqf-EQ-Egn"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -760,7 +668,7 @@
                                                 <constraint firstItem="rZE-Jl-lDn" firstAttribute="leading" secondItem="6zf-xD-QOr" secondAttribute="leading" constant="15" id="854-sH-nC5"/>
                                                 <constraint firstItem="z2W-tO-ec3" firstAttribute="leading" secondItem="6zf-xD-QOr" secondAttribute="leading" constant="15" id="8Nb-xD-F1v"/>
                                                 <constraint firstItem="aZZ-X0-jUy" firstAttribute="top" secondItem="RO6-un-Dfc" secondAttribute="bottom" constant="10" id="9Y8-LL-znb"/>
-                                                <constraint firstItem="cJU-ks-slY" firstAttribute="leading" secondItem="6zf-xD-QOr" secondAttribute="leading" constant="64" id="Bzf-QB-VBb"/>
+                                                <constraint firstItem="cJU-ks-slY" firstAttribute="leading" secondItem="6zf-xD-QOr" secondAttribute="leading" constant="73" id="Bzf-QB-VBb"/>
                                                 <constraint firstItem="rZE-Jl-lDn" firstAttribute="top" secondItem="CjA-IK-QcZ" secondAttribute="bottom" constant="10" id="CTI-pI-dbH"/>
                                                 <constraint firstItem="RO6-un-Dfc" firstAttribute="leading" secondItem="6zf-xD-QOr" secondAttribute="leading" constant="15" id="CXF-jI-jtH"/>
                                                 <constraint firstAttribute="trailing" secondItem="aZZ-X0-jUy" secondAttribute="trailing" constant="15" id="CxU-mo-0fv"/>
@@ -787,7 +695,7 @@
                                                 <constraint firstItem="3zZ-Ia-C3f" firstAttribute="top" secondItem="6Wd-Rp-tU0" secondAttribute="bottom" constant="37" id="fvT-VT-ktq"/>
                                                 <constraint firstItem="Mxa-y5-A2B" firstAttribute="top" secondItem="FZx-Bw-Zsl" secondAttribute="bottom" constant="10" id="gyR-a2-ir0"/>
                                                 <constraint firstItem="YZL-Tz-e3e" firstAttribute="top" secondItem="4XY-vb-mkw" secondAttribute="bottom" constant="10" id="gz3-Ji-Z5c"/>
-                                                <constraint firstItem="Bti-n2-wZH" firstAttribute="leading" secondItem="cJU-ks-slY" secondAttribute="trailing" constant="-22" id="h5f-r7-bfX"/>
+                                                <constraint firstItem="Bti-n2-wZH" firstAttribute="leading" secondItem="cJU-ks-slY" secondAttribute="trailing" constant="-14" id="h5f-r7-bfX"/>
                                                 <constraint firstItem="6Wd-Rp-tU0" firstAttribute="leading" secondItem="6zf-xD-QOr" secondAttribute="leading" constant="15" id="hIy-YD-Aot"/>
                                                 <constraint firstAttribute="trailing" secondItem="QBO-xd-LbB" secondAttribute="trailing" constant="15" id="hse-gb-7eS"/>
                                                 <constraint firstItem="Bti-n2-wZH" firstAttribute="top" secondItem="6Wd-Rp-tU0" secondAttribute="bottom" constant="107" id="iYP-U5-0Gm"/>
@@ -801,7 +709,7 @@
                                                 <constraint firstItem="RO6-un-Dfc" firstAttribute="top" secondItem="7ZE-yD-fPj" secondAttribute="bottom" constant="20" id="uPq-Tv-VOE"/>
                                                 <constraint firstItem="tJ7-7w-4Dw" firstAttribute="leading" secondItem="6zf-xD-QOr" secondAttribute="leading" constant="15" id="url-JW-7ff"/>
                                                 <constraint firstItem="FZx-Bw-Zsl" firstAttribute="top" secondItem="OqX-gS-zHP" secondAttribute="bottom" constant="20" id="v0v-eW-u6j"/>
-                                                <constraint firstAttribute="trailing" secondItem="Bti-n2-wZH" secondAttribute="trailing" constant="89.5" id="vT9-Ym-9Dz"/>
+                                                <constraint firstAttribute="trailing" secondItem="Bti-n2-wZH" secondAttribute="trailing" constant="72.5" id="vT9-Ym-9Dz"/>
                                             </constraints>
                                         </view>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVZ-7H-Tcg">
@@ -827,7 +735,7 @@
                                         <constraint firstItem="0eY-GX-NGW" firstAttribute="top" secondItem="Rpq-8i-zye" secondAttribute="top" constant="45" id="BMi-UL-Jhw"/>
                                         <constraint firstItem="67B-SF-7sI" firstAttribute="leading" secondItem="Rpq-8i-zye" secondAttribute="leading" constant="17" id="E74-h6-XFY"/>
                                         <constraint firstItem="PfB-Pn-7N9" firstAttribute="leading" secondItem="Rpq-8i-zye" secondAttribute="leading" constant="17" id="FV7-lD-rbh"/>
-                                        <constraint firstItem="PfB-Pn-7N9" firstAttribute="top" secondItem="0eY-GX-NGW" secondAttribute="bottom" constant="32" id="RLQ-cC-Exh"/>
+                                        <constraint firstItem="PfB-Pn-7N9" firstAttribute="top" secondItem="0eY-GX-NGW" secondAttribute="bottom" constant="50" id="RLQ-cC-Exh"/>
                                         <constraint firstAttribute="trailing" secondItem="PfB-Pn-7N9" secondAttribute="trailing" constant="33" id="Ulb-Ae-I6g"/>
                                         <constraint firstAttribute="trailing" secondItem="6zf-xD-QOr" secondAttribute="trailing" constant="17" id="VXm-GB-tqP"/>
                                         <constraint firstAttribute="bottom" secondItem="6zf-xD-QOr" secondAttribute="bottom" constant="20" id="W2R-v9-CCv"/>
@@ -898,19 +806,13 @@
                                                 <constraint firstAttribute="height" constant="75" id="BKA-xk-G3f"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Atv-ID-Y8m">
-                                            <rect key="frame" x="17" y="152" width="364" height="45"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Survey Questions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Atv-ID-Y8m">
+                                            <rect key="frame" x="17" y="168" width="364" height="29"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="45" id="xbi-pn-XeR"/>
+                                                <constraint firstAttribute="height" constant="29" id="xbi-pn-XeR"/>
                                             </constraints>
-                                            <attributedString key="attributedText">
-                                                <fragment content="Survey Questions">
-                                                    <attributes>
-                                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <font key="NSFont" metaFont="system" size="22"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                            <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy-SemiBold" pointSize="22"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer some questions to continue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qnr-2e-ObE">
@@ -918,7 +820,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="16" id="7DS-kO-MxH"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                            <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -926,71 +828,53 @@
                                             <rect key="frame" x="17" y="240" width="380" height="639"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hi-h1-FFE">
-                                                    <rect key="frame" x="15" y="31" width="76.5" height="17"/>
+                                                    <rect key="frame" x="15" y="31" width="77.5" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="2CN-V8-q52"/>
                                                         <constraint firstAttribute="height" constant="17" id="GXA-eA-yKC"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7q-gQ-niV">
-                                                    <rect key="frame" x="15" y="134" width="95.5" height="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7q-gQ-niV">
+                                                    <rect key="frame" x="15" y="134" width="95" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="Apb-af-eGL"/>
                                                         <constraint firstAttribute="height" constant="17" id="yOt-zm-7bj"/>
                                                     </constraints>
-                                                    <attributedString key="attributedText">
-                                                        <fragment content="Model Number">
-                                                            <attributes>
-                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <font key="NSFont" metaFont="system" size="14"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miles" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSJ-o8-W8p">
-                                                    <rect key="frame" x="15" y="237" width="34" height="17"/>
+                                                    <rect key="frame" x="15" y="237" width="31.5" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="5zp-dM-M9t"/>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="yjS-h6-ord"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALf-rp-dmY">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Owner Type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALf-rp-dmY">
                                                     <rect key="frame" x="15" y="340" width="78" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="4Ac-fs-K5E"/>
                                                         <constraint firstAttribute="height" constant="17" id="zbt-xH-LoP"/>
                                                     </constraints>
-                                                    <attributedString key="attributedText">
-                                                        <fragment content="Owner Type">
-                                                            <attributes>
-                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <font key="NSFont" metaFont="system" size="14"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7aD-VR-Q6a">
-                                                    <rect key="frame" x="15" y="443" width="47" height="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Budget" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7aD-VR-Q6a">
+                                                    <rect key="frame" x="15" y="443" width="48.5" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="Nxh-Qb-rcs"/>
                                                         <constraint firstAttribute="height" constant="17" id="qLa-ce-6ET"/>
                                                     </constraints>
-                                                    <attributedString key="attributedText">
-                                                        <fragment content="Budget">
-                                                            <attributes>
-                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <font key="NSFont" metaFont="system" size="14"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcf-nh-Wce">
@@ -999,7 +883,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="56" id="X0k-dL-eNj"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                    <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy-SemiBold" pointSize="20"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" title="Submit">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1175,7 +1059,7 @@
                                         <constraint firstItem="pit-en-cLN" firstAttribute="leading" secondItem="1FZ-J6-bQt" secondAttribute="leading" constant="19" id="cQI-ej-44W"/>
                                         <constraint firstItem="Qnr-2e-ObE" firstAttribute="leading" secondItem="1FZ-J6-bQt" secondAttribute="leading" constant="17" id="euU-l1-C5k"/>
                                         <constraint firstItem="Atv-ID-Y8m" firstAttribute="leading" secondItem="1FZ-J6-bQt" secondAttribute="leading" constant="17" id="jfY-MW-SEl"/>
-                                        <constraint firstItem="Atv-ID-Y8m" firstAttribute="top" secondItem="HFK-qI-6BP" secondAttribute="bottom" constant="32" id="k7i-m8-B5R"/>
+                                        <constraint firstItem="Atv-ID-Y8m" firstAttribute="top" secondItem="HFK-qI-6BP" secondAttribute="bottom" constant="48" id="k7i-m8-B5R"/>
                                         <constraint firstItem="pit-en-cLN" firstAttribute="top" secondItem="1FZ-J6-bQt" secondAttribute="top" constant="13" id="oAs-Wl-Gg2"/>
                                         <constraint firstAttribute="trailing" secondItem="Qnr-2e-ObE" secondAttribute="trailing" constant="22" id="ogk-NT-04D"/>
                                         <constraint firstItem="Qnr-2e-ObE" firstAttribute="top" secondItem="Atv-ID-Y8m" secondAttribute="bottom" constant="2" id="pIH-u0-56o"/>
@@ -1239,69 +1123,43 @@
                                                 <constraint firstAttribute="height" constant="75" id="SeA-Sd-ddd"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJR-vw-GvY">
-                                            <rect key="frame" x="17" y="152" width="364" height="45"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OTP Verification" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJR-vw-GvY">
+                                            <rect key="frame" x="17" y="171" width="364" height="26"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="45" id="Lbe-9I-RFu"/>
+                                                <constraint firstAttribute="height" constant="26" id="Lbe-9I-RFu"/>
                                             </constraints>
-                                            <attributedString key="attributedText">
-                                                <fragment content="OTP Verification">
-                                                    <attributes>
-                                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <font key="NSFont" metaFont="system" size="22"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                            <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy-SemiBold" pointSize="22"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TyT-4q-vcf">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check your mail to see the verification code " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TyT-4q-vcf">
                                             <rect key="frame" x="17" y="199" width="375" height="16"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="16" id="OUt-aD-h2G"/>
                                             </constraints>
-                                            <attributedString key="attributedText">
-                                                <fragment content="Check your mail to see the verification code ">
-                                                    <attributes>
-                                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <font key="NSFont" metaFont="system" size="14"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                            <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uRE-XJ-Sob">
                                             <rect key="frame" x="20" y="240" width="374" height="280"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PpT-RP-spx">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OTP Code" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PpT-RP-spx">
                                                     <rect key="frame" x="15" y="43" width="66" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="pqS-tb-JGg"/>
                                                     </constraints>
-                                                    <attributedString key="attributedText">
-                                                        <fragment content="OTP Code">
-                                                            <attributes>
-                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <font key="NSFont" metaFont="system" size="14"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="14"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBp-9K-hPR">
-                                                    <rect key="frame" x="15" y="205" width="54.5" height="27"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verify" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBp-9K-hPR">
+                                                    <rect key="frame" x="15" y="205" width="57.5" height="27"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="27" id="YDy-Y8-xcn"/>
                                                     </constraints>
-                                                    <attributedString key="attributedText">
-                                                        <fragment content="Verify">
-                                                            <attributes>
-                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <font key="NSFont" metaFont="system" size="22"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy-SemiBold" pointSize="22"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWD-IN-Ayd">
@@ -1394,35 +1252,23 @@
                                                 <constraint firstAttribute="height" constant="31" id="vC9-FB-u5l"/>
                                             </constraints>
                                         </stackView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BxS-h1-JcW">
-                                            <rect key="frame" x="57" y="715" width="240" height="17"/>
-                                            <attributedString key="attributedText">
-                                                <fragment content="did not receive the email? check your">
-                                                    <attributes>
-                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" metaFont="system" size="14"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="did not receive the email? check your" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BxS-h1-JcW">
+                                            <rect key="frame" x="57" y="715" width="241.5" height="14"/>
+                                            <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy-SemiBold" pointSize="14"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLV-5j-iJi">
-                                            <rect key="frame" x="57" y="737" width="86" height="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="spam filter or" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLV-5j-iJi">
+                                            <rect key="frame" x="57" y="734" width="85" height="17"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="17" id="GXm-3o-lq3"/>
                                             </constraints>
-                                            <attributedString key="attributedText">
-                                                <fragment content="spam filter or">
-                                                    <attributes>
-                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" metaFont="system" size="14"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                            <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy-SemiBold" pointSize="14"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ONm-0k-dDF">
-                                            <rect key="frame" x="150.5" y="737" width="165" height="17"/>
+                                            <rect key="frame" x="149.5" y="734" width="165" height="17"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="17" id="qE1-xn-P70"/>
                                             </constraints>
@@ -1462,7 +1308,7 @@
                                         <constraint firstItem="BxS-h1-JcW" firstAttribute="top" secondItem="ubV-Gm-y46" secondAttribute="bottom" constant="140" id="guD-hg-DB0"/>
                                         <constraint firstItem="aLV-5j-iJi" firstAttribute="leading" secondItem="CmX-eN-Ct6" secondAttribute="leading" constant="57" id="kdC-b0-OHN"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ubV-Gm-y46" secondAttribute="trailing" constant="20" id="rro-wH-T9X"/>
-                                        <constraint firstItem="pJR-vw-GvY" firstAttribute="top" secondItem="aqT-K5-byN" secondAttribute="bottom" constant="32" id="tM9-uZ-euq"/>
+                                        <constraint firstItem="pJR-vw-GvY" firstAttribute="top" secondItem="aqT-K5-byN" secondAttribute="bottom" constant="51" id="tM9-uZ-euq"/>
                                         <constraint firstItem="pJR-vw-GvY" firstAttribute="leading" secondItem="CmX-eN-Ct6" secondAttribute="leading" constant="17" id="zTa-uO-Ygl"/>
                                         <constraint firstItem="uRE-XJ-Sob" firstAttribute="top" secondItem="TyT-4q-vcf" secondAttribute="bottom" constant="25" id="zWd-sE-hV3"/>
                                     </constraints>
@@ -1491,7 +1337,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jna-tp-dGS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2277" y="-1248"/>
+            <point key="canvasLocation" x="2276.8115942028985" y="-1248.2142857142856"/>
         </scene>
         <!--Set PasswordVC-->
         <scene sceneID="tRW-k1-4jX">
@@ -1531,51 +1377,38 @@
                                                 <action selector="backbuttonClicked:" destination="SH7-Ct-DrI" eventType="touchUpInside" id="4E6-ql-0kQ"/>
                                             </connections>
                                         </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cO-dr-W7H">
-                                            <rect key="frame" x="17" y="164" width="364" height="30"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cO-dr-W7H">
+                                            <rect key="frame" x="17" y="173" width="364" height="21"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="30" id="Lud-H5-NIM"/>
+                                                <constraint firstAttribute="height" constant="21" id="Lud-H5-NIM"/>
                                             </constraints>
-                                            <attributedString key="attributedText">
-                                                <fragment content="Set Password">
-                                                    <attributes>
-                                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <font key="NSFont" metaFont="system" size="22"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                            <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy-SemiBold" pointSize="22"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password should be alteast 8 characters in length not be same as your current password" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5f-25-h2A">
-                                            <rect key="frame" x="17" y="196" width="375" height="37"/>
+                                            <rect key="frame" x="17" y="196" width="375" height="32.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="hel-Uo-B7i"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="16"/>
+                                            <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fkD-ua-MiD">
-                                            <rect key="frame" x="17" y="242" width="380" height="350"/>
+                                            <rect key="frame" x="17" y="237.5" width="380" height="350"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08Y-bK-ODL">
-                                                    <rect key="frame" x="15" y="31" width="95" height="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08Y-bK-ODL">
+                                                    <rect key="frame" x="15" y="31" width="92.5" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="Khv-Rl-a4N"/>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="wpu-7s-6bS"/>
                                                     </constraints>
-                                                    <attributedString key="attributedText">
-                                                        <fragment content="New Password">
-                                                            <attributes>
-                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <font key="NSFont" metaFont="system" size="14"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="14"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="12345" borderStyle="roundedRect" placeholder="Enter Your Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dNL-8z-hpf">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dNL-8z-hpf">
                                                     <rect key="frame" x="15" y="58" width="350" height="56"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
@@ -1587,15 +1420,15 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOy-ic-Txj">
-                                                    <rect key="frame" x="15" y="134" width="116" height="17"/>
+                                                    <rect key="frame" x="15" y="134" width="114.5" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="axG-xZ-1Zu"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="14"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="12345" borderStyle="roundedRect" placeholder="Re enter YourPassword" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I4b-nM-uIw">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Re enter YourPassword" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I4b-nM-uIw">
                                                     <rect key="frame" x="15" y="161" width="350" height="56"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
@@ -1605,21 +1438,15 @@
                                                     <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                 </textField>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Py-I0-lBk">
-                                                    <rect key="frame" x="15" y="227" width="141" height="17"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Py-I0-lBk">
+                                                    <rect key="frame" x="15" y="227" width="139" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="Tft-uP-qe4"/>
                                                     </constraints>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="14"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                    <state key="normal">
-                                                        <attributedString key="attributedTitle">
-                                                            <fragment content="Both Password Match">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.0" green="0.79607843137254897" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" metaFont="system" size="14"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                        </attributedString>
+                                                    <state key="normal" title="Both Password Match">
+                                                        <color key="titleColor" red="0.0" green="0.79607843137254897" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqJ-3A-clN">
@@ -1670,7 +1497,7 @@
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="h5f-25-h2A" secondAttribute="trailing" constant="22" id="AYh-zJ-CRa"/>
                                         <constraint firstItem="9cO-dr-W7H" firstAttribute="leading" secondItem="N6C-mN-OvS" secondAttribute="leading" constant="17" id="HWw-ZA-5aC"/>
-                                        <constraint firstItem="9cO-dr-W7H" firstAttribute="top" secondItem="E7J-CA-u3O" secondAttribute="bottom" constant="32" id="MYQ-1u-rHL"/>
+                                        <constraint firstItem="9cO-dr-W7H" firstAttribute="top" secondItem="E7J-CA-u3O" secondAttribute="bottom" constant="41" id="MYQ-1u-rHL"/>
                                         <constraint firstItem="E7J-CA-u3O" firstAttribute="leading" secondItem="N6C-mN-OvS" secondAttribute="leading" constant="127" id="N0H-A6-sci"/>
                                         <constraint firstItem="zp5-Jw-UaK" firstAttribute="leading" secondItem="N6C-mN-OvS" secondAttribute="leading" constant="19" id="V5r-oX-ag6"/>
                                         <constraint firstAttribute="trailing" secondItem="fkD-ua-MiD" secondAttribute="trailing" constant="17" id="biz-11-3xM"/>
@@ -1708,7 +1535,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wCN-gV-MIz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2958" y="-1248"/>
+            <point key="canvasLocation" x="2957.971014492754" y="-1248.2142857142856"/>
         </scene>
     </scenes>
     <resources>

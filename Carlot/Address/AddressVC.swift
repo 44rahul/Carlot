@@ -35,7 +35,18 @@ class AddressVC: UIViewController {
 
     }
     
-
+    @IBAction func backBtnClicked(_ sender: Any) {
+        
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func AddressBtnClicked(_ sender: Any) {
+        
+        let vc = addAddressVC.instance(.main) as! addAddressVC
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
   
 }
 
