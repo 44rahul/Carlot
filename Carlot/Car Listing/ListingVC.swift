@@ -22,6 +22,10 @@ class ListingVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         listingView.layer.borderColor = UIColor.white.cgColor
     }
     
+    @IBAction func searchbtnClicked(_ sender: Any) {
+        let vc = SearchVC.instance(.main) as! SearchVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     @IBAction func backBtnClicked(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }

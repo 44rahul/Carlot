@@ -20,6 +20,7 @@ class LoginVC: UIViewController {
     @IBOutlet weak var btn_gmail : UIButton!
     @IBOutlet weak var btn_signup : UIButton!
     
+    @IBOutlet weak var passBtn: UIButton!
     var conditionIsChecked : Bool =  true
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -102,12 +103,25 @@ class LoginVC: UIViewController {
     
     }
     @IBAction func btnSecureText(_ sender: UIButton) {
+//        if conditionIsChecked{
+//        txtPassword.isSecureTextEntry = false
+//            conditionIsChecked = false
+//        }else{
+//            txtPassword.isSecureTextEntry = true
+//            conditionIsChecked = true
+//        }
+        
         if conditionIsChecked{
-        txtPassword.isSecureTextEntry = false
+            txtPassword.isSecureTextEntry = false
             conditionIsChecked = false
+
+            passBtn.setImage(UIImage (named: "secure_txt"), for: .normal)
+
         }else{
             txtPassword.isSecureTextEntry = true
             conditionIsChecked = true
+            passBtn.setImage(UIImage(named: "hidePass"), for: .normal)
+
         }
     }
     

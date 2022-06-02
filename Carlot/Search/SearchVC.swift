@@ -34,6 +34,10 @@ class SearchVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         
     }
     
+    @IBAction func backBtnClicked(_ sender: Any) {
+        
+        self.navigationController?.popViewController(animated: true)
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return SearchSuggestionArr.count

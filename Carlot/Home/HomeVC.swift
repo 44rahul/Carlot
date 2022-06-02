@@ -23,6 +23,19 @@ class HomeVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         
        // homeTable.contentInset = UIEdgeInsets(top: -self.view.safeAreaInsets.top, left: 0, bottom: 0, right:  0)
     }
+    
+    @IBAction func notificationBtnClicked(_ sender: Any) {
+        
+        let vc = NotificationVC.instance(.main) as! NotificationVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    @IBAction func SearchBtnClciked(_ sender: Any) {
+        
+        let vc = SearchVC.instance(.main) as! SearchVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     @IBAction func SideMenuBtnClicked(_ sender: Any) {
         
         let vc = SideMenuVC.instance(.main) as! SideMenuVC

@@ -44,6 +44,13 @@ class ForgotEmailVC: UIViewController {
         alertView.isHidden = true
     }
     
+    @IBAction func DoneBtnClicked(_ sender: Any) {
+        
+        let vc = OTPVerificationVC.instance(.main) as! OTPVerificationVC
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+        
+    }
     @IBAction func nextBtn(_ sender: Any) {
         
         if (EmailTxt.text?.isStringBlank())!{

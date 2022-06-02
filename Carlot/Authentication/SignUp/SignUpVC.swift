@@ -24,6 +24,8 @@ class SignUpVC: UIViewController {
     @IBOutlet weak var btn_signup : UIButton!
     
     
+    @IBOutlet weak var ConfirmPassBtn: UIButton!
+    @IBOutlet weak var passBtn: UIButton!
     @IBOutlet weak var txtIdentity : UITextField!
     @IBOutlet weak var txtLicenseNo : UITextField!
     @IBOutlet weak var txtCardRegNo : UITextField!
@@ -131,22 +133,34 @@ class SignUpVC: UIViewController {
     }
     
     @IBAction func SecurePasswordText(_ sender: Any) {
-        if conditionIsChecked {
-        txtPassword.isSecureTextEntry = false
+        
+        
+        if conditionIsChecked{
+            txtPassword.isSecureTextEntry = false
             conditionIsChecked = false
+
+            passBtn.setImage(UIImage (named: "secure_txt"), for: .normal)
+
         }else{
             txtPassword.isSecureTextEntry = true
             conditionIsChecked = true
+            passBtn.setImage(UIImage(named: "hidePass"), for: .normal)
+
         }
     }
     
     @IBAction func SecureConfirmPasswordText(_ sender: Any) {
-        if conditionIsChecked {
+        if conditionIsChecked{
             txtConfirmPwd.isSecureTextEntry = false
             conditionIsChecked = false
+
+            ConfirmPassBtn.setImage(UIImage (named: "secure_txt"), for: .normal)
+
         }else{
             txtConfirmPwd.isSecureTextEntry = true
             conditionIsChecked = true
+            ConfirmPassBtn.setImage(UIImage(named: "hidePass"), for: .normal)
+
         }
     }
     

@@ -134,11 +134,8 @@ class SurveyVC: UIViewController {
     }
     
     @IBAction func btnSubmitClicked(_ sender: Any) {
-        //let vc = OTPVerificationVC.instance(.Authentication) as! OTPVerificationVC
         
-       // SetValidationFiled()
-        
-        let vc = ProfileVC.instance(.main) as! ProfileVC
+        let vc = BaseTabVC.instance(.homeTab) as! BaseTabVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

@@ -9,6 +9,7 @@ import UIKit
 
 class DetailVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
+    @IBOutlet weak var BuyNowPopUp: UIView!
     @IBOutlet weak var profilePic: UIImageView!
     @IBOutlet weak var makeAnOfferView: UIView!
     @IBOutlet weak var DetailTable: UITableView!
@@ -45,6 +46,17 @@ class DetailVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         
     }
         
+    @IBAction func Nobtnclicked(_ sender: Any) {
+        
+        makeAnOfferView.isHidden = false
+
+    }
+    @IBAction func BuyNowBtnClciked(_ sender: Any) {
+        
+        makeAnOfferView.isHidden = false
+        BuyNowPopUp.isHidden = false
+
+    }
     @IBAction func cahtBtnClicked(_ sender: Any) {
         
         let vc = ChatListVC.instance(.main) as! ChatListVC
@@ -65,7 +77,7 @@ class DetailVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     @IBAction func makeOfferBtnClicked(_ sender: Any) {
         
         makeAnOfferView.isHidden = false
-
+        BuyNowPopUp.isHidden = true
     }
     
     @IBAction func BuyNowBuutonclicked(_ sender: Any) {
