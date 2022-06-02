@@ -46,7 +46,7 @@ class ForgotEmailVC: UIViewController {
     
     @IBAction func DoneBtnClicked(_ sender: Any) {
         
-        let vc = OTPVerificationVC.instance(.main) as! OTPVerificationVC
+        let vc = OTPVerificationVC.instance(.Authentication) as! OTPVerificationVC
         self.navigationController?.pushViewController(vc, animated: true)
         
         

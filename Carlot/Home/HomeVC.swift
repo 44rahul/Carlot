@@ -82,7 +82,8 @@ class HomeVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
             cell2.layer.borderWidth = 0.5
             cell2.layer.borderColor = UIColor.gray.cgColor
             cell2.layer.cornerRadius = 20
-            
+            cell2.selectionStyle = .none
+
             cell2.HomeNavigation = self.navigationController
             return cell2
             
